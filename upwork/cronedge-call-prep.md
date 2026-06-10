@@ -1,6 +1,6 @@
 # CronEdge call — my script
 
-I'm meeting Anuoluwapo Balogun (CronEdge LLC, US-registered, she's Nigerian) on **Thursday, June 11, 2:00-2:30pm WAT**, Google Meet: **meet.google.com/adz-buic-sfp** (on my calendar, both of us RSVP'd yes). I'm doing it from the hub on Starlink, set up 10 minutes early to test mic and cam. If the hub network dies, I hotspot my phone.
+I'm meeting Anuoluwapo Balogun (CronEdge LLC, US-registered, she's Nigerian) on **Thursday, June 11, 5:30-6:00pm WAT**, Google Meet. (She cancelled the original 2pm slot over a conflict; I rebooked 5:30pm, inside her real availability window.) **The Meet link is in the NEW invite/calendar event, the old adz-buic-sfp link died with the cancelled booking.** I'm doing it from the hub on Starlink, set up 10 minutes early to test mic and cam. If the hub network dies, I hotspot my phone.
 
 ## What this call really is
 

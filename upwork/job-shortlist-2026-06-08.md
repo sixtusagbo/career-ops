@@ -32,7 +32,8 @@ Base URL for all links: https://www.upwork.com/jobs/
 - **Preferred location: Nigeria, Pakistan — Sixtus MATCHES (favored bucket, not ignored).**
 - Client: USA, 5.0★ (8 reviews), 88% hire rate, verified, has hired Nigerian devs before. Next.js/React/TS/Tailwind, ongoing (future portal/Stripe). Pays low ($250) but real foot-in-door.
 - Angle: exact stack + "architect it to grow into your portal" + Nigeria-based asset. Highlights = Arvalox + Portfolio + Next.js work.
-- **STATUS 2026-06-09: client REQUESTED A CALL** (Notion booking link). Strongest lead. Sixtus to book a slot + send confirmation. Call prep in upwork/cronedge-call-prep.md. They probed microservices = sizing him up for ongoing portal/backend work, not just the $250 site.
+- **STATUS 2026-06-09: client REQUESTED A CALL** (Notion booking link). Strongest lead. They probed microservices = sizing him up for ongoing portal/backend work, not just the $250 site. Call prep in upwork/cronedge-call-prep.md.
+- 2026-06-10: she cancelled the Thu 2pm slot (calendar conflict, apologized, asked to rebook same link). Rebooked **Thu Jun 11, 5:30-6:00pm WAT**. New Meet link in new invite (old one dead). Reminders updated.
 
 ---
 
