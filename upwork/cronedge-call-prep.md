@@ -1,9 +1,7 @@
 # CronEdge call — prep
 
 Client: Anuoluwapo Balogun, CronEdge LLC (US-registered tech consulting; founder is Nigerian).
-**Booked: Thursday, June 11, 2:00-2:30pm Lagos (WAT), 30 min, Google Meet.** Doing it at a hub on Starlink for strong daytime network. Be there ~10 min early to test mic/cam.
-
-Before the call: (1) accept the Gmail invite from admin@cronedge.com (Gmail held it as "unknown sender", so it isn't on your calendar until you accept; accepting also RSVPs to her). (2) Send the one-line confirmation in Upwork: "Hi Anuoluwapo, I booked the Thursday 2pm slot (WAT) through your Notion link. Looking forward to the call." The Google Meet link is inside that invite email.
+**Booked: Thursday, June 11, 2:00-2:30pm Lagos (WAT), 30 min.** Meet link: **meet.google.com/adz-buic-sfp** (also on your Google Calendar; both sides RSVP'd yes). Doing it at a hub on Starlink for strong daytime network. Be there ~10 min early to test mic/cam. Backup if the hub network dies: phone hotspot.
 
 ## What this call really is
 
@@ -11,7 +9,7 @@ A fit/discovery call. The microservices question on a $250 site tells you they'r
 
 Keep it a conversation, not a pitch. Everything below is so you sound fluent and ask sharp questions, not slides to present.
 
-## The one-liner (your frame for the whole call)
+## The one-liner (your frame for the whole call) — MEMORIZE
 
 CronEdge needs a credible, lead-generating site now and a customer portal later. You're the developer who ships the site fast AND lays the foundation so the portal never requires a rebuild.
 
@@ -35,7 +33,7 @@ Next.js (App Router) + TypeScript + Tailwind, deployed on Vercel (fast, preview 
 - Now: design system, auth-ready route structure, and lead data captured cleanly, so the portal slots in later.
 - Portal phase 1: client login, service requests (ticketing), account management. Phase 2: Stripe payments and onboarding flows.
 - Portal backend: containerized services (Docker), one concern per service (accounts, service requests, billing), typed API contracts, each independently deployable.
-- The judgment line that builds trust: "The marketing site itself doesn't need microservices. Next.js on Vercel is right for it. Containerized services earn their place when the portal ships. I design the boundaries now and deploy services when there's something to serve."
+- The judgment line that builds trust — MEMORIZE: "The marketing site itself doesn't need microservices. Next.js on Vercel is right for it. Containerized services earn their place when the portal ships. I design the boundaries now and deploy services when there's something to serve." (Bonus framing if cost comes up: unneeded complexity is unneeded cost.)
 
 ## Timeline (5 to 10 days)
 
@@ -54,7 +52,7 @@ Days 1-2: structure, design system, Home. Days 3-5: inner pages. Days 6-7: blog,
 
 - The $250 is the 8-page site: design in code, responsive, SEO, deploy, docs.
 - Portal, Stripe, and microservices are separate phases you scope after the site is live.
-- If they bundle it: "The site I can start now at that scope; the portal is real backend work, I'd scope it as its own phase so you only commit when you're ready." Don't undersell the big work.
+- If they bundle it — MEMORIZE: "The site I can start now at that scope; the portal is real backend work, I'd scope it as its own phase so you only commit when you're ready." Don't undersell the big work.
 - Offer milestone 1 = Home + site structure so she sees momentum within days.
 
 ## Curveballs
