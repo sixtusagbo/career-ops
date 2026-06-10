@@ -1,0 +1,81 @@
+# Career-Ops Profile -- Sixtus Miracle Agbo
+
+candidate:
+  full_name: "Sixtus Miracle Agbo"
+  email: "miracleagbosixtus@gmail.com"
+  phone: "+234 816 962 7898"
+  location: "Anambra, Nigeria"
+  linkedin: "linkedin.com/in/sixtusagbo"
+  portfolio_url: "https://sixtusagbo.dev"
+  github: "github.com/sixtusagbo"
+  twitter: "https://x.com/sixtusagbo"
+  blog: "https://sixtusagbo.dev/blog"
+
+target_roles:
+  primary:
+    - "Senior Full-Stack Engineer"
+    - "Senior Software Engineer"
+    - "AI Application Engineer"
+  archetypes:
+    - name: "Full-Stack Engineer"
+      level: "Mid-Senior"
+      fit: "primary"
+    - name: "AI Application / Product Engineer"
+      level: "Mid-Senior"
+      fit: "primary"
+    - name: "Backend Engineer (Python/Node/PHP)"
+      level: "Mid-Senior"
+      fit: "secondary"
+    - name: "Frontend Engineer (React/Next.js)"
+      level: "Mid-Senior"
+      fit: "secondary"
+    - name: "Mobile Engineer (Flutter)"
+      level: "Mid-Senior"
+      fit: "secondary"
+    - name: "Founding / Early-stage Engineer"
+      level: "Mid-Senior"
+      fit: "adjacent"
+    - name: "Solutions / Forward Deployed Engineer"
+      level: "Mid-Senior"
+      fit: "adjacent"
+
+narrative:
+  headline: "Full-stack engineer shipping production web, mobile, and AI-powered SaaS end-to-end."
+  exit_story: "5+ years building production apps across React/Next.js, FastAPI, Laravel, and Flutter -- from REST APIs and Postgres schemas to polished cross-platform UIs. Currently architecting EU-targeted SaaS at NexSolve and building AI-native products (Arvalox, Food Pilot, Grosonix) on the side. Looking for a senior IC role on a product-focused team where I can own features end-to-end."
+  superpowers:
+    - "End-to-end ownership: API design, DB schema, frontend, deploy"
+    - "Polyglot stack -- TypeScript/Python/Dart/PHP across web and mobile"
+    - "Ship AI-powered SaaS features (RAG, LLM workflows, agents) into real products"
+    - "Startup velocity -- idea to production in weeks, not quarters"
+    - "Mentoring and technical writing"
+  proof_points:
+    - name: "Arvalox"
+      url: "https://sixtusagbo.dev"
+      hero_metric: "AI-powered B2B SaaS for A/R management -- Next.js + FastAPI + Postgres, end-to-end"
+    - name: "Food Pilot"
+      url: "https://sixtusagbo.dev"
+      hero_metric: "AI eating companion with personalized meal recommendations -- Flutter + Firebase"
+    - name: "Grosonix"
+      url: "https://sixtusagbo.dev"
+      hero_metric: "AI social media growth platform with content intelligence -- Next.js + Supabase"
+    - name: "uStackSchool (Listacc)"
+      url: "https://sixtusagbo.dev"
+      hero_metric: "Pixel-perfect Next.js + TypeScript platform delivered from Figma"
+
+compensation:
+  # Starting point for remote senior roles from Nigeria -- adjust anytime.
+  target_range: "$60K-100K USD"
+  currency: "USD"
+  minimum: "$45K USD"
+  location_flexibility: "Remote-only (global). Open to EU/UK/US timezones; flexible on overlap hours."
+
+location:
+  country: "Nigeria"
+  city: "Anambra"
+  timezone: "WAT (UTC+1)"
+  visa_status: "No visa sponsorship currently -- prefer remote. Open to relocation with sponsorship."
+  onsite_availability: "Remote preferred; open to occasional travel."
+
+language:
+  # Switch to modes/de, modes/fr, modes/ja, modes/pt, modes/ru as needed
+  modes_dir: "modes"

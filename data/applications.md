@@ -1,0 +1,15 @@
+# Applications Tracker
+
+| # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+|---|------|---------|------|-------|--------|-----|--------|-------|
+| 13 | 2026-05-24 | Cowrywise | Software Engineer, Backend | 3.3/5 | Applied | ✅ | [013](reports/013-cowrywise-2026-05-24.md) | Lagos onsite, NG-market comp; submitted 2026-05-24 via Breezy with 3 essay answers (Money Handling, Database, Notification System spec at gist.github.com/sixtusagbo/3137666a4bc0e6711ea507bd3b3beef6); auto-ack received 2026-05-24 (no-reply@cowrywise.breezy-mail.com), 3-15 business day response window; willing to relocate; follow up 2026-06-16 if silent |
+| 12 | 2026-05-22 | Alignerr | AI Training Contributor (7 stacked: Full Stack, Python Engineer, Frontend TS, SE-Backend, SE-Frontend, Code Review Specialist, DevOps/IaC) | 3.5/5 | Applied | ✅ | [012](reports/012-alignerr-multi-role-2026-05-22.md) | Labelbox-owned platform; 7 apps via app.alignerr.com on 2026-05-22, 7-pending cap reached; recruiter inbound (meetalignerrexp.com) was lead-gen with inflated terms, bypassed via direct signup; 3 more (Python Dev, JS Dev, Coding Expert SQL) on hold until pending reviewed |
+| 11 | 2026-05-22 | Melo Associates | Technical Co-Founder / Founding Engineer | 4.0/5 | Applied | ✅ | [011](reports/011-melo-founding-engineer-2026-05-22.md) | Julien Barbier referral; HRTech startup; Step 1 (interview-questions-ai) submitted via swati@meloassociates.com; review after 2026-05-25 |
+| 1 | 2026-04-16 | ElevenLabs | Full-Stack Engineer (Back-End Leaning) | 4.3/5 | Evaluated | ⏳ | [001](reports/001-elevenlabs-2026-04-16.md) | Truly global remote; Python+AI focus; strong match |
+| 4 | 2026-04-16 | Intercom | Senior Product Engineer, AI | 3.8/5 | Evaluated | ⏳ | [004](reports/004-intercom-product-ai-2026-04-16.md) | Berlin hybrid 3d/wk; sponsorship for some roles; apply cautiously |
+| 5 | 2026-04-16 | Supabase | Strategic Customer Solutions Architect (EMEA) | 2.5/5 | SKIP | ❌ | [005](reports/005-supabase-sa-2026-04-16.md) | Global remote but 10+ YoE enterprise Postgres expert; too senior |
+| 6 | 2026-04-16 | Zapier | Sr. Fullstack Engineer - Identity Platform | 1.5/5 | SKIP | ❌ | [006](reports/006-zapier-identity-2026-04-16.md) | NAMER only; specialist enterprise identity role |
+| 7 | 2026-04-16 | Arize AI | Senior AI Product Engineer, Fullstack | 1.5/5 | SKIP | ❌ | [007](reports/007-arize-ai-fullstack-2026-04-16.md) | US-only; needs US work auth |
+| 8 | 2026-04-16 | LangChain | Solutions Architect (Remote) | 2.5/5 | SKIP | ❌ | [008](reports/008-langchain-sa-2026-04-16.md) | 7+ YoE + heavy K8s/Terraform infra; not his current level |
+| 9 | 2026-04-16 | n8n | Sr AI Engineer (Remote Europe, TS/Vue/NodeJS) | 4.2/5 | Evaluated | ⏳ | [002](reports/002-n8n-ai-engineer-2026-04-16.md) | Germany visa sponsorship offered; TS/Node+LLM exact fit |
+| 10 | 2026-04-16 | n8n | Senior Product Engineer (TS/NodeJS/Vue) | 4.2/5 | Evaluated | ⏳ | [003](reports/003-n8n-product-engineer-2026-04-16.md) | Germany visa sponsorship; pure full-stack product role |
