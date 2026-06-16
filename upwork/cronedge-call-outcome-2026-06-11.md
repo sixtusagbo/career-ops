@@ -45,3 +45,13 @@ Anuoluwapo Balogun, CronEdge LLC. 30-min Google Meet. Went well, good rapport.
 - She finished her other interviews and sent a FORMAL Upwork job offer: Website Designer and Developer for Tech Startup. Respond by Jun 19, 2026.
 - The held "where do we stand" follow-up is now moot. Do NOT send the recap. The next message is an ACCEPT + KICKOFF note (rework upwork/messages/cronedge-followup.md into that).
 - Action: review and accept the Upwork offer, confirm scope/terms match ($250, 8-page site, 5-10 days, portal as separate later phase), then send kickoff asking for logo (high-res/SVG), 2-3 reference sites, copy/industry/pricing notes, and hosting target.
+
+## Build kickoff (2026-06-16)
+- Offer accepted, contract live since 2026-06-13. Milestone 1 ($50) active and funded.
+- She went quiet over the weekend, then sent all the start assets on Jun 16:
+  - Logo: CronEdge Logo (2).svg + CronEdge Logo.png (dark green mark).
+  - Reference sites (her picks, all K8s/cloud-native B2B): stormforge.io, container-solutions.com, fairwinds.com.
+  - cronedge-service-pricing-description.txt: services, benefits, what they do, pricing direction (content source of truth).
+  - She removed one message (unknown content).
+- Build workspace created at ~/projects/cronedge-website with KICKOFF.md (self-contained brief). Sixtus drops the 3 assets into ~/projects/cronedge-website/assets, then runs a fresh Claude Code session there to produce the build plan + firm delivery date before building.
+- Next client message owed: the firm delivery date + short build plan (she is deadline-strict, so commit a date we can beat).
