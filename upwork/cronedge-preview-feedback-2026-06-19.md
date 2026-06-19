@@ -82,4 +82,4 @@ Newsletter tool is her choice. Options offered: Resend audience (default, alread
 careers@cronedge.com and info@cronedge.com are hers to provision; she has launch covered. The careers button is a mailto, so the inbox just needs to exist by go-live.
 
 ## Status
-Replies drafted at upwork/messages/cronedge-corrections-reply.md (reply-in-bits, one per her message). Replies 1-4 sent; newsletter reply pending. Build-correction prompt to be written after the last reply goes out.
+All reply-in-bits sent (upwork/messages/cronedge-corrections-reply.md). Round-1 corrections + fixups built, committed (not pushed), and the "corrections are live" message sent to her (upwork/messages/cronedge-corrections-live-message.md). Awaiting her next review pass.
