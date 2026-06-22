@@ -89,7 +89,7 @@ After the corrections-live message, she sent a burst of inputs over Upwork on Su
 "The available certs are only individual certs. I'm working on ones that can be gotten as an organization. For now you can use the attached cert as a placeholder." Then later: "I think I'll prefer adding the badges rather than the certificats with my name on it." So: use the badge emblems linked to her verification pages, not the name-bearing certificate PDFs. Four badges supplied:
 
 - Certified Kubernetes Administrator (CKA): https://www.credly.com/badges/26a05f9a-aeb5-4a29-b591-5144b3e35778/public_url
-- Red Hat Certified Specialist in Ansible Automation: https://www.credly.com/badges/f9193e63-7059-4495-8a6b-11d36f211f8f/public_url
+- Red Hat Certified Advanced System Administrator in Ansible (the Credly page's actual title, used in the build): https://www.credly.com/badges/f9193e63-7059-4495-8a6b-11d36f211f8f/public_url
 - CompTIA A+: https://www.credly.com/badges/78f76627-9fce-458d-9f29-8d4125d012be/public_url
 - ITIL 4 Foundation (PeopleCert): https://badges.peoplecert.org/Badge/en/11E55EBF-AA31-4CAC-A719-7FAB56FE0DF3
 
@@ -111,4 +111,4 @@ Round 1 already shipped the Resources section on placeholder content (two entrie
 Build prompt for this round: ~/projects/cronedge-website/docs/round2-badges-waitlist-prompt.md. Reply drafts: upwork/messages/cronedge-badges-waitlist-reply.md.
 
 ## Status
-Round-1 corrections + fixups built, committed (not pushed), redeployed, and the "corrections are live" message sent. She approved M2 (Jun 20) and M2 is now active and funded. Round-2 inputs documented above; build prompt and reply drafts staged, build not yet run. Sixtus has acked her certs+newsletter message and sent the badges reply; the waitlist reply, the resource-files reminder, and the closing are drafted pending his confirm. Then run the round-2 build.
+Round-1 corrections + fixups built, committed (not pushed), redeployed, and the "corrections are live" message sent. She approved M2 (Jun 20) and M2 is now active and funded. Round-2 inputs documented above. Round-2 build DONE 2026-06-22 (badges in the trust row, fixed to 64x64 square; EmailCapture extracted for de-dup; CronPlane waitlist live on /products; 33 tests green; commits 277ab49, aa9275d, 9929384, d46b3f4 plus 753ddd3 badge images). Badges reply, waitlist reply, and resource-files reminder all sent; only the post-build closing is pending. Nothing pushed yet: cronedge-website history was rewritten (two internal docs purged) so it needs a one-time force push, which also redeploys the Vercel preview. Then send the closing, and decide on submitting M2.
