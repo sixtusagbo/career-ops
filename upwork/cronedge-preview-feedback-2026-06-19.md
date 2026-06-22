@@ -81,5 +81,34 @@ Newsletter tool is her choice. Options offered: Resend audience (default, alread
 ## Inbox note
 careers@cronedge.com and info@cronedge.com are hers to provision; she has launch covered. The careers button is a mailto, so the inbox just needs to exist by go-live.
 
+## Round 2 inputs (2026-06-21)
+
+After the corrections-live message, she sent a burst of inputs over Upwork on Sunday Jun 21.
+
+### Certifications: badges, not name certs
+"The available certs are only individual certs. I'm working on ones that can be gotten as an organization. For now you can use the attached cert as a placeholder." Then later: "I think I'll prefer adding the badges rather than the certificats with my name on it." So: use the badge emblems linked to her verification pages, not the name-bearing certificate PDFs. Four badges supplied:
+
+- Certified Kubernetes Administrator (CKA): https://www.credly.com/badges/26a05f9a-aeb5-4a29-b591-5144b3e35778/public_url
+- Red Hat Certified Specialist in Ansible Automation: https://www.credly.com/badges/f9193e63-7059-4495-8a6b-11d36f211f8f/public_url
+- CompTIA A+: https://www.credly.com/badges/78f76627-9fce-458d-9f29-8d4125d012be/public_url
+- ITIL 4 Foundation (PeopleCert): https://badges.peoplecert.org/Badge/en/11E55EBF-AA31-4CAC-A719-7FAB56FE0DF3
+
+She sent the badge PNGs as attachments (CKA, CompTIA A+, Red Hat Ansible, ITIL) plus Credly embed code; the build uses the badge images linked to the verify pages, not the embed scripts.
+
+### Newsletter tool: stick with Resend
+"Concerning the newsletter tool, let's just stick with what you have now. We can integrate a better solution as the organization matures." Read: keep Resend (the thing the site already runs on, which is what was offered as the default), do not add a separate newsletter platform. So /api/subscribe stays logs-only for now and gets wired to a Resend Audience in her account at handover.
+
+### New: CronPlane MVP tester waitlist
+"A quick update that we just concluded. For the Cronplane product, we want to collect an email waitlist of testers for the mvp on the website." New feature, folded into this round (no extra charge, consistent with the resources call). Decision (Sixtus): make it a distinct capture, its own placement and copy (a "join the waitlist" band on Products, not a download card), source tag `cronplane-waitlist`. Only the form primitive is shared with the resource downloads (one `EmailCapture` component, no duplicated email/Turnstile/honeypot logic). One `/api/subscribe` endpoint serves both, told apart by the source tag. Logs-only now. At handover both feed ONE Resend Audience tagged by source (not two audiences), which keeps it on the free tier: storing contacts is free, only actual sends count toward the cap, and her volume is tiny. The distinct capture has no pricing impact, it's just a form.
+
+### Resources stay on temp placeholders
+Round 1 already shipped the Resources section on placeholder content (two entries in content/resources, temp PDFs in public/resources), so the section is functional now. Decision (Sixtus): keep the temp files; swap in her real files plus metadata (file, title, description per resource) when she sends them. No resources build work this round.
+
+### Still pending on her
+- Resource files: she sends her real lead-magnet files plus a title and short description for each; they swap into the existing entries. Reminder sent; she replied she hasn't created them yet and will send by Wed 2026-06-24. Temp placeholders serve the downloads meanwhile.
+- At handover: her Resend account + Audience ID(s) so the resource downloads and the CronPlane waitlist actually retain and email signups before the MVP (July).
+
+Build prompt for this round: ~/projects/cronedge-website/docs/round2-badges-waitlist-prompt.md. Reply drafts: upwork/messages/cronedge-badges-waitlist-reply.md.
+
 ## Status
-All reply-in-bits sent (upwork/messages/cronedge-corrections-reply.md). Round-1 corrections + fixups built, committed (not pushed), and the "corrections are live" message sent to her (upwork/messages/cronedge-corrections-live-message.md). Awaiting her next review pass.
+Round-1 corrections + fixups built, committed (not pushed), redeployed, and the "corrections are live" message sent. She approved M2 (Jun 20) and M2 is now active and funded. Round-2 inputs documented above; build prompt and reply drafts staged, build not yet run. Sixtus has acked her certs+newsletter message and sent the badges reply; the waitlist reply, the resource-files reminder, and the closing are drafted pending his confirm. Then run the round-2 build.
