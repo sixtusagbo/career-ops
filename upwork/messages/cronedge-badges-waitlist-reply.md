@@ -15,3 +15,7 @@ For the resource downloads, I'm running placeholder files right now so the secti
 ## Closing -- SENT
 
 Both are in now, the badges in the trust row and the CronPlane waitlist on the Products page. Let me know what you think.
+
+## Reply: certifications alignment fix (send after pushing, so she sees it live) -- pending
+
+Done. The Certifications heading now lines up with the other sections, and the band is clearly separated from the FAQ. Refresh the preview and let me know what you think.
