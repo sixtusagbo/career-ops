@@ -12,6 +12,6 @@ Noted. I'll add a tester signup on the Products page under CronPlane so people c
 
 For the resource downloads, I'm running placeholder files right now so the section works end to end. Send me the ones you've got ready, the file plus a title and a short description for each, and I'll swap them in.
 
-## Closing (send after the build is live) -- pending confirm
+## Closing -- SENT
 
-Both are in now, the badges in the trust row and the CronPlane waitlist on the Products page. Take a look and let me know what you think.
+Both are in now, the badges in the trust row and the CronPlane waitlist on the Products page. Let me know what you think.
