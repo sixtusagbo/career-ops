@@ -55,6 +55,31 @@ Framing for your own positioning (not a hard quote):
 - Phase it: MVP portal first (login, submit and track service requests, status), then payments/billing, then extras. Each phase a milestone.
 - This is weeks of work, not the $250 site. Position it as a new milestone-based engagement, or a monthly retainer if she wants ongoing support. After discovery, send the scope and price in writing.
 
+## Portal pricing and the "who names a number first" game
+
+Your instinct is right: let her anchor first. The reason is upside. If she names a number bigger than you'd have asked, you take it; if she names a small one, you scope to fit. Either way you don't leave money on the table or get lowballed into your own quote.
+
+Get her to price first:
+- "What budget range are you working with for the portal?"
+- "Where does this sit budget-wise for you, so I can scope the first phase to fit?"
+- Tie it to scope: "The number depends a lot on what goes in the MVP, so let's lock the must-haves first, then I'll send a proposal with the price." This is also why you don't quote on the call: defer the firm number to the written proposal after discovery.
+- Ask if she's gotten other quotes or has a figure in mind already.
+
+If she pushes you to name it first:
+- Give a range, not a point, tied to scope, anchored at the higher end so there's room to come down. "A portal like this usually runs in the $X to $Y range depending on how much goes in the first phase. I'll firm it up in the proposal once we've nailed the scope."
+- Never anchor off the $250 site. That was a deliberate foot in the door. This is a real application.
+
+Internal reference numbers (your own floor/ceiling, not for blurting out):
+- MVP / Phase 1 (auth, client accounts, submit and track service/incident requests, status, basic admin dashboard): target $2,500-$3,500. Floor around $1,500 if very minimal; reach $4,000-$5,000 with multi-role, notifications, and polish.
+- Phase 2 (Stripe billing, invoices): $800-$1,500.
+- Phase 3 (reports, notifications, integrations): scope as it comes.
+- Alternative: a monthly retainer to build it, around $1,000-$1,500/month for 2-3 months, then ongoing support. Turns a scary lump sum into manageable monthly and sets up recurring income, which fits your cash-flow goal. Strong option to float.
+
+Tactics:
+- Phase it so the first number she hears is the MVP (smaller), not the whole portal.
+- If it runs through Upwork, the ~10% freelancer fee comes off your number, so price with that in mind or quote gross.
+- Anchor high, phase, let scope justify the number. Don't discount before she's even pushed back.
+
 ## Have ready to screen-share
 
 - The live preview (with the three real checklists wired in).
