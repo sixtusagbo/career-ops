@@ -79,6 +79,10 @@ Tactics:
 - Phase it so the first number she hears is the MVP (smaller), not the whole portal.
 - If it runs through Upwork, the ~10% freelancer fee comes off your number, so price with that in mind or quote gross.
 - Anchor high, phase, let scope justify the number. Don't discount before she's even pushed back.
+- Silence hold: after you give a range or she names a number, go quiet. Don't fill the pause by talking yourself down. Let her respond first.
+- Value recap: if she hesitates, restate what the portal does for her business (faster client requests, less manual ops work, a professional client experience), not the feature list.
+- Walk-away ready: be willing to decline a number that isn't worth the weeks. You have other work, and that calm is leverage.
+- "The grateful get the floor, the prepared get the range." Come prepared, not just thankful.
 
 ## Have ready to screen-share
 
