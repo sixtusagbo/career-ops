@@ -1,12 +1,14 @@
 # CronEdge launch call prep
 
-Mon Jun 29, 5:30-6 PM EDT (10:30-11 PM Lagos), 30 min, Google Meet (link in the Notion confirmation). Late night for you, be set up early.
+Mon Jun 29, 5:30-6:30 PM EDT (10:30-11:30 PM Lagos), 1 hour (she extended it from 30 min). Google Meet: meet.google.com/uaf-qyoy-xwp. Late night for you, be set up early.
 
-## Goals (30 min is tight, prioritize in this order)
+## Goals (a full hour now, room for both the launch and a real portal conversation)
+
+Rough split: about 30 min on launch + handover walkthrough + admin demo, about 30 min on portal discovery. Order:
 
 1. Walk her through the finished site and the admin panel so she can self-manage.
-2. Align on the deploy/handover steps and what she needs to provide (prereqs below). The cronedge.com email verification and the final DNS cutover will likely finish async after the call, not live in 30 min.
-3. Open the client-portal conversation. Discovery, not a quote: gather requirements, signal you can build it, set up to send a scoped written proposal.
+2. Align on the deploy/handover steps and what she needs to provide (prereqs below). The cronedge.com email verification and the final DNS cutover will likely finish async after the call, not live during it.
+3. Open the client-portal conversation. With the extra time, do proper discovery: gather requirements, signal you can build it, and you can sketch a rough phased plan live. Still no firm quote on the call, send the scoped written proposal after.
 
 ## What she should have ready (answers her "system requirements" question, expanded)
 
@@ -29,7 +31,7 @@ You bring: the built image, the Kubernetes manifests, and the full deployment do
 - Swap in her keys: Resend, Turnstile, the Keystatic GitHub vars and OAuth app, the analytics token.
 - Verify cronedge.com in Resend (SPF/DKIM). This needs DNS propagation, so it may complete after the call.
 - Deploy the container to her cluster, DNS/TLS cutover from the current coming-soon page.
-- Reality check: a fully-live launch inside 30 min is optimistic because of DNS and email verification timing. Aim to walk it through and get it moving, finish the cutover async.
+- Reality check: even with the hour, a fully-live launch on the call is optimistic because of DNS and email verification timing (those propagate on their own clock). Aim to walk it through and get it moving, finish the cutover async.
 
 ## Admin panel demo points
 
