@@ -12,7 +12,7 @@ Roughly half on the launch (walk the site + admin, set up the accounts, line up 
 
 "Thanks for making the time. The site's done and live on the preview, so tonight I want to do two things: walk you through it and the editor so you can run it yourself, get the launch on your own infrastructure moving, and then talk through the client portal you mentioned. Sound good?"
 
-Then I share my screen (or she shares hers when we get to her accounts) and walk the live site quickly, the pages, the three checklists on Resources, the contact form. Keep it short, she's seen it.
+Then I share my screen, I'm showing her the site and the admin first, and walk the live site quickly, the pages, the three checklists on Resources, the contact form. Keep it short, she's seen it. (Later, when we get to creating her accounts, she shares her screen and I guide her through each one.)
 
 ## The admin, what I'll show her
 
