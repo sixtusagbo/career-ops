@@ -1,100 +1,109 @@
-# CronEdge launch call prep
+# CronEdge launch call, my prep (in my voice)
 
-Mon Jun 29, 5:30-6:30 PM EDT (10:30-11:30 PM Lagos), 1 hour (she extended it from 30 min). Google Meet: meet.google.com/uaf-qyoy-xwp. Late night for you, be set up early.
+Mon Jun 29, 10:30-11:30 PM Lagos (5:30-6:30 PM EDT), 1 hour. Google Meet: meet.google.com/uaf-qyoy-xwp. tl;dv is running. I'm set up early, this is the launch and the portal-sale call, so I'm sharp and I let her drive the portal part.
 
-## Goals (a full hour now, room for both the launch and a real portal conversation)
+This isn't a script to read out. I go through it, it sinks in, then I just talk.
 
-Rough split: about 30 min on launch + handover walkthrough + admin demo, about 30 min on portal discovery. Order:
+## How I'm running the hour
 
-1. Walk her through the finished site and the admin panel so she can self-manage.
-2. Align on the deploy/handover steps and what she needs to provide (prereqs below). The cronedge.com email verification and the final DNS cutover will likely finish async after the call, not live during it.
-3. Open the client-portal conversation. With the extra time, do proper discovery: gather requirements, signal you can build it, and you can sketch a rough phased plan live. Still no firm quote on the call, send the scoped written proposal after.
+Roughly half on the launch (walk the site + admin, set up the accounts, line up the deploy), half on the portal. I lead the launch part; on the portal I mostly ask and listen.
 
-## What she should have ready (answers her "system requirements" question, expanded)
+## Opening
 
-The site is a single stateless Next.js container, no database, runs on her existing Kubernetes cluster on modest CPU and memory. To deploy and go live she needs:
+"Thanks for making the time. The site's done and live on the preview, so tonight I want to do two things: walk you through it and the editor so you can run it yourself, get the launch on your own infrastructure moving, and then talk through the client portal you mentioned. Sound good?"
 
-- cronedge.com DNS access: an A/CNAME record to her cluster ingress plus TLS, and the SPF/DKIM records to verify the domain in Resend so the contact form can send email.
-- A container registry her cluster can pull from, to host the site's Docker image.
-- Three free accounts, set up together on or after the call:
-  - Resend (transactional email for the contact form; verify cronedge.com).
-  - Cloudflare Turnstile (the contact form's spam check; a site key and secret key).
-  - A GitHub repo (the site's repo, transferred to her) plus a GitHub OAuth app, so the Keystatic admin panel can save her content edits as commits.
-- Optional: a Cloudflare Web Analytics token (free, privacy-friendly).
+Then I share my screen (or she shares hers when we get to her accounts) and walk the live site quickly, the pages, the three checklists on Resources, the contact form. Keep it short, she's seen it.
 
-You bring: the built image, the Kubernetes manifests, and the full deployment docs (deploy/DEPLOYMENT.md).
+## The admin, what I'll show her
 
-## Deploy / handover walkthrough (high level)
+"This is the part you'll use the most. It's your editor, at /admin. You log in with GitHub, and only people you give access to the repo can get in. From here you edit everything yourself, blog posts, services, products, careers, your certifications, and the resources. So those extra checklists you'll make later, you just add them here yourself, no need to send them to me."
 
-- Transfer the GitHub repo to her ownership.
-- Switch Keystatic to GitHub mode on her infra (admin edits save as commits to her repo, which redeploys).
-- Swap in her keys: Resend, Turnstile, the Keystatic GitHub vars and OAuth app, the analytics token.
-- Verify cronedge.com in Resend (SPF/DKIM). This needs DNS propagation, so it may complete after the call.
-- Deploy the container to her cluster, DNS/TLS cutover from the current coming-soon page.
-- Reality check: even with the hour, a fully-live launch on the call is optimistic because of DNS and email verification timing (those propagate on their own clock). Aim to walk it through and get it moving, finish the cutover async.
+I'll do it live once: open /admin, edit a resource or a blog post, save, and explain: "When you save, it records the change and the site rebuilds and goes live in a minute or two. No code, no deployments on your end."
 
-## Admin panel demo points
+One honest caveat I'll give her: "It's all-or-anything though, anyone you give access to can edit any section, there's no 'this person only edits the blog'. Right now it's just you, so you're fine."
 
-- /keystatic, behind a secure login (only her team).
-- She can edit blog posts, services, products, careers, certifications, and resources (add or replace checklists, more coming).
-- Every save commits to the repo and redeploys automatically. No code, no deploy knowledge needed. This is the answer to "I'll add more checklists later."
+## The deploy, the order I'll follow with her
 
-## Client portal discovery (her ask: "what it'll take to have a client portal")
+This is the sequence. Some of it we do live together (the accounts), some is my work or her cluster person's (build/deploy), and DNS + email verification run on their own clock, so I'm honest that the full cutover may finish after tonight. The goal of the call is to get it moving and get her accounts created, not necessarily flip it live in the hour.
 
-This is a separate, larger build than the marketing site: a real application with accounts, auth, a database, and a backend. Do not quote a number on the call. Run discovery, then send a written scope and price.
+The order, and roughly what I say at each step:
 
-The scope is already defined in the JD (see upwork/cronedge-jd.md): customer onboarding, service requests, account management, payment integrations (Stripe), and ticketing/helpdesk. So you are NOT asking whether she wants these, that reads like you didn't read the brief. You're confirming the details, the payment model, the phasing, and the numbers. Lead the topic by referencing the portal-architecture recommendations you already delivered (docs/PORTAL-ARCHITECTURE.md), it shows you've thought the build through.
+1. **The repo first.** "Step one is moving the site's code to your GitHub. You own it, your editor logins check against it, and your deploys build from it. Everything hangs off this." (I transfer the repo to her account/org.)
 
-Questions to ask (say them straight, then listen):
+2. **The accounts.** "Now we set up the few accounts the site uses. I'll walk you through each one, you create them on your side, and we copy a value or two from each. I've got step-by-step notes so this is quick." I guide her through, in this order:
+   - **Resend** (email): create the account, add cronedge.com and add the DNS records it gives us to verify the domain, then copy the API key. This is what makes the contact form and the resource/waitlist emails send.
+   - **Cloudflare Turnstile** (the spam check on the forms): add the site, copy the site key and the secret key.
+   - **The GitHub app for your editor login**: Keystatic has a setup page that creates it for us, we get an app name, a client id and secret. That's what powers the GitHub sign-in to /admin.
+   - **Cloudflare Web Analytics** (optional, free): add the site, copy the token. Privacy-friendly, no cookies.
+   I collect all those values, they go into her cluster's secrets, never the code.
+
+3. **Domain and email records.** "I'll point cronedge.com at your cluster and add the email verification records. These take a little while to spread across the internet, so we kick them off early." (DNS A/AAAA to her ingress + TLS via cert-manager; Resend SPF/DKIM records.)
+
+4. **Build the image.** I build the Docker image with the public values baked in (site URL, Turnstile site key, analytics token, the GitHub repo + app name) and push it to her registry.
+
+5. **Secrets and deploy.** I fill her Kubernetes secret with the runtime values (Turnstile secret, Resend key, the Keystatic session secret + GitHub client id/secret, the lead email, the audience id) and apply the manifests to deploy it.
+
+6. **Verify end to end.** /admin asks for GitHub login (so it's locked down), the contact form lands in her inbox, the spam check works, the resource and waitlist signups go into Resend, analytics is counting.
+
+7. **Cutover.** Flip the domain from the coming-soon page to the live site once TLS and email are verified.
+
+8. **Walk her through the admin again** so she's comfortable editing on her own.
+
+What's realistic tonight: steps 1-2 (repo + her accounts) and step 8 (the walkthrough) we do together; the build/deploy and DNS/email finish around it. I'll say plainly: "We'll get everything set up and moving tonight; the domain and email take a bit to verify on their own, so the final flip-live might land a little after, I'll handle that and confirm when it's done."
+
+## What she needs on her side (if she asks "what do I need")
+
+The site's light, a single container, no database, runs on her existing Kubernetes on modest resources. From her: DNS access to cronedge.com, a container registry her cluster can pull from, and a few minutes to create those free accounts with me. I bring the image, the manifests, and the deploy docs.
+
+## The portal, her ask
+
+The scope is already in her original JD (saved at upwork/cronedge-jd.md): customer onboarding, service requests, account management, payments with Stripe, and ticketing/helpdesk. So I'm NOT asking whether she wants these, she already wrote them down. I'm confirming the details, the payment model, the phasing, and getting her budget. And I lead with the portal-architecture recommendations I already delivered as part of this project (docs/PORTAL-ARCHITECTURE.md), that shows I've already thought the whole thing through.
+
+How I open it: "On the portal, you actually laid this out in the original brief, onboarding, service requests, account management, payments, the helpdesk side. I built the portal architecture recommendations for it already as part of this project, so I've got a clear picture of how I'd approach it. Let me ask a few things so I scope it right."
+
+Then I ask these straight and listen:
 - "Who's logging in, your clients onboarding and managing their accounts, your team handling the requests, or both? Roughly how many to start?"
-- "Walk me through how a service request should flow, client submits it, then what happens on your side, triage, status updates, resolution? Helpdesk/ticketing style?"
-- "On payments, the JD has Stripe, what's the model, clients paying invoices, monthly retainers for your managed support, or both?"
+- "Walk me through how a service request should flow, a client submits it, then what happens on your side, triage, status updates, resolution? Is it helpdesk/ticketing style?"
+- "On payments, you mentioned Stripe, what's the model, clients paying invoices, monthly retainers for your managed support, or both?"
 - "If we launch the first version with just the essentials, what has to be in it, and what can wait for a later phase?"
-- "Anything it has to plug into, your email, calendar, accounting, tools you already run?"
 - "What's your target timeline, when would you want the first version live?"
-- "What budget are you working with for it?" (this is your anchor, let her put the number down first)
+- "What budget are you working with for it?"
 
-Framing for your own positioning (not a hard quote):
-- Likely a Next.js app plus a database (Postgres), auth, and role-based access, with Stripe when billing comes in. Separate from the marketing site.
-- Phase it (this is how you'll pitch it): MVP first = client login + onboarding, account management, and service requests with status (the helpdesk core). Phase 2 = Stripe payments/billing. Phase 3 = fuller ticketing/helpdesk and extras. Each phase a milestone. The whole thing is in the JD, so the conversation is about what's in Phase 1 vs later, not what's in at all.
-- This is weeks of work, not the $250 site. Position it as a new milestone-based engagement, or a monthly retainer (a fixed amount each month for agreed ongoing work) if she wants ongoing support.
-- Close the portal topic with a line like: "This is a bigger build than the site, a proper app, so I don't want to guess a number on the spot. Let me do my research, put together a clear scope and pricing, and send it to you in writing after this." Then go quiet and let her react.
+How I frame the build (in my head, so I sound clear): it's a real app, Next.js plus a database, auth and roles, Stripe when billing comes in. I phase it: Phase 1 is login/onboarding + account management + service requests with status (the helpdesk core); Phase 2 is Stripe billing; Phase 3 is the fuller ticketing and extras. The whole thing is in the JD, so the conversation is what's in Phase 1 vs later, not whether.
 
-## Portal pricing and the "who names a number first" game
+How I close the portal topic: "This is a bigger build than the site, a proper application, so I don't want to throw a number out on the spot. Let me do my research, put together a clear scope and pricing, and send it to you in writing after this." Then I go quiet and let her react.
 
-Your instinct is right: let her anchor first. The reason is upside. If she names a number bigger than you'd have asked, you take it; if she names a small one, you scope to fit. Either way you don't leave money on the table or get lowballed into your own quote.
+## Pricing, the number game
 
-Get her to price first:
+The rule: let her name a number first. If she names bigger than I'd have asked, great, I take it; if she names small, I scope to fit. Either way I don't lowball myself or leave money on the table.
+
+Getting her to price first:
 - "What budget range are you working with for the portal?"
-- "Where does this sit budget-wise for you, so I can scope the first phase to fit?"
-- Tie it to scope: "The number depends a lot on what goes in the MVP, so let's lock the must-haves first, then I'll send a proposal with the price." This is also why you don't quote on the call: defer the firm number to the written proposal after discovery.
-- Ask if she's gotten other quotes or has a figure in mind already.
+- "Where does this sit budget-wise for you, so I scope the first phase to fit?"
+- "Have you got a figure in mind already, or gotten other quotes?"
 
-If she pushes you to name it first:
-- Give a range, not a point, tied to scope, anchored at the higher end so there's room to come down. "A portal like this usually runs in the $X to $Y range depending on how much goes in the first phase. I'll firm it up in the proposal once we've nailed the scope."
-- Never anchor off the $250 site. That was a deliberate foot in the door. This is a real application.
+If she pushes me to name it first, I give a range, not a point, tied to scope, anchored high so there's room: "A portal like this usually runs in the $X to $Y range depending on how much goes in the first phase, I'll firm it up in the proposal once we nail the scope." And I never anchor off the $250 site, that was a deliberate foot in the door, this is a real app.
 
-Internal reference numbers (your own floor/ceiling, not for blurting out):
-- MVP / Phase 1 (auth, client accounts, submit and track service/incident requests, status, basic admin dashboard): target $2,500-$3,500. Floor around $1,500 if very minimal; reach $4,000-$5,000 with multi-role, notifications, and polish.
-- Phase 2 (Stripe billing, invoices): $800-$1,500.
-- Phase 3 (reports, notifications, integrations): scope as it comes.
-- Alternative: a monthly retainer to build it, around $1,000-$1,500/month for 2-3 months, then ongoing support. Turns a scary lump sum into manageable monthly and sets up recurring income, which fits your cash-flow goal. Strong option to float.
+My own floor/ceiling (I do NOT say these out loud):
+- Phase 1 MVP (login/onboarding, account management, service requests with status, basic admin): target $2,500-$3,500. Floor ~$1,500 if very minimal, reach $4,000-$5,000 with roles, notifications, polish.
+- Phase 2 (Stripe billing): $800-$1,500.
+- A monthly retainer is the option I most want to float: ~$1,000-$1,500/month for 2-3 months to build it, then ongoing support. It turns a scary lump sum into manageable monthly for her, and it's recurring income for me, which is what I want. (A retainer = she pays a set amount each month for agreed ongoing work, instead of one big project fee.)
+- If it runs through Upwork, ~10% comes off my number, so I price gross.
 
-Tactics:
-- Phase it so the first number she hears is the MVP (smaller), not the whole portal.
-- If it runs through Upwork, the ~10% freelancer fee comes off your number, so price with that in mind or quote gross.
-- Anchor high, phase, let scope justify the number. Don't discount before she's even pushed back.
-- Silence hold: after you give a range or she names a number, go quiet. Don't fill the pause by talking yourself down. Let her respond first.
-- Value recap: if she hesitates, restate what the portal does for her business (faster client requests, less manual ops work, a professional client experience), not the feature list.
-- Walk-away ready: be willing to decline a number that isn't worth the weeks. You have other work, and that calm is leverage.
-- "The grateful get the floor, the prepared get the range." Come prepared, not just thankful.
+Tactics I keep in mind:
+- Phase it, so the first number she hears is the small MVP, not the whole portal.
+- Silence hold: after I give a range or she names one, I shut up and let her respond. I don't talk myself down into a discount.
+- Value recap if she hesitates: what the portal does for her business (faster client requests, less manual ops, a professional client experience), not the feature list.
+- Walk-away calm: I'm willing to pass on a number that isn't worth the weeks. I have other work, and that calm is leverage.
+- "The grateful get the floor, the prepared get the range." I come prepared, not just thankful.
 
 ## Have ready to screen-share
 
-- The live preview (with the three real checklists wired in).
-- The /keystatic admin.
+- The live preview (the three real checklists are wired in on /resources).
+- The /admin editor.
 - deploy/DEPLOYMENT.md.
+- My account-setup guides (on my phone or a side window, not shared) so I can walk her through each account smoothly.
 
-## After launch
+## After the call
 
-Once it's live on her infra and she's happy, submit M2 and M3 on Upwork to close the contract. The portal becomes its own new contract/milestones.
+Once it's live on her infra and she's happy, submit M2 and M3 on Upwork to close this contract. The portal becomes its own new contract/milestones, and I send the written scope + pricing once I've done the research.
