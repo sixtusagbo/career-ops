@@ -43,17 +43,19 @@ You bring: the built image, the Kubernetes manifests, and the full deployment do
 
 This is a separate, larger build than the marketing site: a real application with accounts, auth, a database, and a backend. Do not quote a number on the call. Run discovery, then send a written scope and price.
 
-Questions to ask:
-- Who logs in: her clients, her team, or both? Roughly how many.
-- What do they do in it? (submit and track service or incident requests, view incident reports and recommendations, see account/contract details, invoices and payments)
-- Payments: does she want billing/invoicing in it now (Stripe), or later?
-- Any must-have integrations (email, calendar, tools she already uses).
-- Timeline and budget: near-term build or a few months out.
+Questions to ask (say them straight, then listen):
+- "Who's going to log in, your clients, your team, or both? Roughly how many people?"
+- "Once they're in, what do you picture them doing? Submitting and tracking service or incident requests, seeing their reports and recommendations, their account or contract details?"
+- "Do you want payments or invoicing inside it, so they pay you through the portal, now or later?"
+- "Does it need to connect to anything you already use, email, calendar, other tools?"
+- "What's your target timeline, when would you want this live?"
+- "What budget are you working with for it?" (this is your anchor, let her put the number down first)
 
 Framing for your own positioning (not a hard quote):
 - Likely a Next.js app plus a database (Postgres), auth, and role-based access, with Stripe when billing comes in. Separate from the marketing site.
 - Phase it: MVP portal first (login, submit and track service requests, status), then payments/billing, then extras. Each phase a milestone.
-- This is weeks of work, not the $250 site. Position it as a new milestone-based engagement, or a monthly retainer if she wants ongoing support. After discovery, send the scope and price in writing.
+- This is weeks of work, not the $250 site. Position it as a new milestone-based engagement, or a monthly retainer (a fixed amount each month for agreed ongoing work) if she wants ongoing support.
+- Close the portal topic with a line like: "This is a bigger build than the site, a proper app, so I don't want to guess a number on the spot. Let me do my research, put together a clear scope and pricing, and send it to you in writing after this." Then go quiet and let her react.
 
 ## Portal pricing and the "who names a number first" game
 
