@@ -43,17 +43,20 @@ You bring: the built image, the Kubernetes manifests, and the full deployment do
 
 This is a separate, larger build than the marketing site: a real application with accounts, auth, a database, and a backend. Do not quote a number on the call. Run discovery, then send a written scope and price.
 
+The scope is already defined in the JD (see upwork/cronedge-jd.md): customer onboarding, service requests, account management, payment integrations (Stripe), and ticketing/helpdesk. So you are NOT asking whether she wants these, that reads like you didn't read the brief. You're confirming the details, the payment model, the phasing, and the numbers. Lead the topic by referencing the portal-architecture recommendations you already delivered (docs/PORTAL-ARCHITECTURE.md), it shows you've thought the build through.
+
 Questions to ask (say them straight, then listen):
-- "Who's going to log in, your clients, your team, or both? Roughly how many people?"
-- "Once they're in, what do you picture them doing? Submitting and tracking service or incident requests, seeing their reports and recommendations, their account or contract details?"
-- "Do you want payments or invoicing inside it, so they pay you through the portal, now or later?"
-- "Does it need to connect to anything you already use, email, calendar, other tools?"
-- "What's your target timeline, when would you want this live?"
+- "Who's logging in, your clients onboarding and managing their accounts, your team handling the requests, or both? Roughly how many to start?"
+- "Walk me through how a service request should flow, client submits it, then what happens on your side, triage, status updates, resolution? Helpdesk/ticketing style?"
+- "On payments, the JD has Stripe, what's the model, clients paying invoices, monthly retainers for your managed support, or both?"
+- "If we launch the first version with just the essentials, what has to be in it, and what can wait for a later phase?"
+- "Anything it has to plug into, your email, calendar, accounting, tools you already run?"
+- "What's your target timeline, when would you want the first version live?"
 - "What budget are you working with for it?" (this is your anchor, let her put the number down first)
 
 Framing for your own positioning (not a hard quote):
 - Likely a Next.js app plus a database (Postgres), auth, and role-based access, with Stripe when billing comes in. Separate from the marketing site.
-- Phase it: MVP portal first (login, submit and track service requests, status), then payments/billing, then extras. Each phase a milestone.
+- Phase it (this is how you'll pitch it): MVP first = client login + onboarding, account management, and service requests with status (the helpdesk core). Phase 2 = Stripe payments/billing. Phase 3 = fuller ticketing/helpdesk and extras. Each phase a milestone. The whole thing is in the JD, so the conversation is about what's in Phase 1 vs later, not what's in at all.
 - This is weeks of work, not the $250 site. Position it as a new milestone-based engagement, or a monthly retainer (a fixed amount each month for agreed ongoing work) if she wants ongoing support.
 - Close the portal topic with a line like: "This is a bigger build than the site, a proper app, so I don't want to guess a number on the spot. Let me do my research, put together a clear scope and pricing, and send it to you in writing after this." Then go quiet and let her react.
 
