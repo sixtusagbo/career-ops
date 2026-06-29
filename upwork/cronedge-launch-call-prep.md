@@ -28,16 +28,20 @@ This is the sequence. Some of it we do live together (the accounts), some is my 
 
 The order, and roughly what I say at each step:
 
-1. **The repo first.** "Step one is moving the site's code to your GitHub. You own it, your editor logins check against it, and your deploys build from it. Everything hangs off this." (I transfer the repo to her account/org.)
+1. **The repo first.** "Step one is moving the site's code to your GitHub. You own it, your editor logins check against it, and your deploys build from it. Everything hangs off this." (I transfer the repo to her account/org. I do NOT need to delete the Vercel preview first, they're independent, and the preview keeps serving its last build for the demo. After her real site is live on her cluster, I delete the Vercel project so there's no stale copy on my keys. And right after transfer, she adds me back as a collaborator, or I lose push access.)
 
-2. **The accounts.** "Now we set up the few accounts the site uses. I'll walk you through each one, you create them on your side, and we copy a value or two from each. I've got step-by-step notes so this is quick." I guide her through, in this order:
-   - **Resend** (email): create the account, add cronedge.com and add the DNS records it gives us to verify the domain, then copy the API key. This is what makes the contact form and the resource/waitlist emails send.
-   - **Cloudflare Turnstile** (the spam check on the forms): add the site, copy the site key and the secret key.
-   - **The GitHub app for your editor login**: Keystatic has a setup page that creates it for us, we get an app name, a client id and secret. That's what powers the GitHub sign-in to /admin.
-   - **Cloudflare Web Analytics** (optional, free): add the site, copy the token. Privacy-friendly, no cookies.
-   I collect all those values, they go into her cluster's secrets, never the code.
+2. **The accounts (she creates them on her screen, I collect the values).** "Now we set up the few accounts the site uses. I'll walk you through each one, you create it, and we copy a value or two from each." Order:
+   - **Resend** (email): create the account, add cronedge.com and add the DNS records it gives us to verify the domain, copy the API key, and create an Audience and copy its ID. Powers the contact form and the resource/waitlist emails.
+   - **Cloudflare** (one account, both at once, since Turnstile and Web Analytics are both Cloudflare): Turnstile, add the site, copy the site key and the secret key. Web Analytics, add the site, copy the token. Privacy-friendly, no cookies.
+   - **The GitHub app for the editor login**: Keystatic's setup page creates it for us, we get an app name (the slug), a client id, and a client secret. Powers the GitHub sign-in to /admin.
 
-3. **Domain and email records.** "I'll point cronedge.com at your cluster and add the email verification records. These take a little while to spread across the internet, so we kick them off early." (DNS A/AAAA to her ingress + TLS via cert-manager; Resend SPF/DKIM records.)
+   Where each value goes, so I direct it right while she shares her screen. Two buckets:
+   - **Baked into the image when I build it** (build args, NOT pasted into any cluster file): the site URL, the Turnstile site key, the analytics token, the GitHub repo (owner/repo), the GitHub app slug. I handle these in the build command.
+   - **Into `deploy/k8s/secret.yaml`** (copied from `secret.example.yaml`): `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `TURNSTILE_SECRET_KEY`, `KEYSTATIC_SECRET` (a random string I generate), `KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`.
+   - The lead emails (where contact leads land, and the from-address) live in `deploy/k8s/configmap.yaml`.
+   Editing the YAML and running kubectl is my side (or her cluster person), not hers to type. She creates the accounts and reads me the values; I place them. Full step-by-steps are in my setup-guides/ (on my phone).
+
+3. **Domain and email records.** "I'll point cronedge.com at your cluster and add the email verification records. These propagate on your registrar's clock, sometimes quick, sometimes slower, so we kick them off early." (DNS A/AAAA to her ingress + TLS via cert-manager; Resend SPF/DKIM records.)
 
 4. **Build the image.** I build the Docker image with the public values baked in (site URL, Turnstile site key, analytics token, the GitHub repo + app name) and push it to her registry.
 
@@ -49,7 +53,7 @@ The order, and roughly what I say at each step:
 
 8. **Walk her through the admin again** so she's comfortable editing on her own.
 
-What's realistic tonight: steps 1-2 (repo + her accounts) and step 8 (the walkthrough) we do together; the build/deploy and DNS/email finish around it. I'll say plainly: "We'll get everything set up and moving tonight; the domain and email take a bit to verify on their own, so the final flip-live might land a little after, I'll handle that and confirm when it's done."
+What's realistic tonight: I aim to get it fully live on the call. The one thing outside our hands is DNS and email propagation, which can be quick or slow depending on her registrar. If it's quick, we finish the whole thing live; if it's slow, everything's set up and the final flip-live just trails a bit and I confirm once it's through. What I'll say: "We'll get it all set up tonight. The only variable is how fast your domain and email records propagate, that's on your registrar's side, sometimes minutes, sometimes longer. If it's quick we go fully live on the call; if not, it's all queued and I confirm the moment it's through."
 
 ## What she needs on her side (if she asks "what do I need")
 
@@ -59,12 +63,12 @@ The site's light, a single container, no database, runs on her existing Kubernet
 
 The scope is already in her original JD (saved at upwork/cronedge-jd.md): customer onboarding, service requests, account management, payments with Stripe, and ticketing/helpdesk. So I'm NOT asking whether she wants these, she already wrote them down. I'm confirming the details, the payment model, the phasing, and getting her budget. And I lead with the portal-architecture recommendations I already delivered as part of this project (docs/PORTAL-ARCHITECTURE.md), that shows I've already thought the whole thing through.
 
-How I open it: "On the portal, you actually laid this out in the original brief, onboarding, service requests, account management, payments, the helpdesk side. I built the portal architecture recommendations for it already as part of this project, so I've got a clear picture of how I'd approach it. Let me ask a few things so I scope it right."
+How I open it: "On the portal, you actually laid this out in the original brief, onboarding, service requests, account management, payments, the helpdesk side. I made the portal architecture recommendations for it already as part of this project, so I've got a clear picture of how I'd approach it. I like to understand a project's scope properly before I price it, so let me ask you a few things."
 
 Then I ask these straight and listen:
 - "Who's logging in, your clients onboarding and managing their accounts, your team handling the requests, or both? Roughly how many to start?"
 - "Walk me through how a service request should flow, a client submits it, then what happens on your side, triage, status updates, resolution? Is it helpdesk/ticketing style?"
-- "On payments, you mentioned Stripe, what's the model, clients paying invoices, monthly retainers for your managed support, or both?"
+- "On payments, you've already got your pricing on the site, the incident response plans, the per-incident and the monthly retainer. So in the portal I'd have clients pay for those directly through Stripe, the retainer as a subscription, the per-incident as a one-off. Is that the model you're thinking, or are there other plans or payment types you'd want to add?"
 - "If we launch the first version with just the essentials, what has to be in it, and what can wait for a later phase?"
 - "What's your target timeline, when would you want the first version live?"
 - "What budget are you working with for it?"
@@ -103,6 +107,10 @@ Tactics I keep in mind:
 - The /admin editor.
 - deploy/DEPLOYMENT.md.
 - My account-setup guides (on my phone or a side window, not shared) so I can walk her through each account smoothly.
+
+## If the Docker "high vulnerability" flag comes up
+
+(Only shows in VS Code, she won't see it.) "It's an OS-level CVE in the Alpine base of the official Node 22 image, present even in the newest tag, with no upstream fix yet. Low real risk here, the site serves static marketing content and doesn't feed the affected package any untrusted input. It clears on its own when the base is patched upstream, which a fresh build picks up."
 
 ## After the call
 
