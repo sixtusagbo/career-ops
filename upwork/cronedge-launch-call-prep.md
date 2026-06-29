@@ -24,7 +24,7 @@ One honest caveat I'll give her: "It's all-or-anything though, anyone you give a
 
 ## The deploy, the order I'll follow with her
 
-This is the sequence. Some of it we do live together (the accounts), some is my work or her cluster person's (build/deploy), and DNS + email verification run on their own clock, so I'm honest that the full cutover may finish after tonight. The goal of the call is to get it moving and get her accounts created, not necessarily flip it live in the hour.
+This is the sequence. After I transfer the repo, the doing is on her end, she runs the steps on her side following DEPLOYMENT.md (it's written for the site owner), and I guide her through each one, telling her exactly where every value goes. So below, the "I" is mostly me guiding; her hands are on the keyboard. The accounts use my setup guides. The only thing on its own clock is DNS + email propagation.
 
 The order, and roughly what I say at each step:
 
@@ -39,7 +39,7 @@ The order, and roughly what I say at each step:
    - **Baked into the image when I build it** (build args, NOT pasted into any cluster file): the site URL, the Turnstile site key, the analytics token, the GitHub repo (owner/repo), the GitHub app slug. I handle these in the build command.
    - **Into `deploy/k8s/secret.yaml`** (copied from `secret.example.yaml`): `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `TURNSTILE_SECRET_KEY`, `KEYSTATIC_SECRET` (a random string I generate), `KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`.
    - The lead emails (where contact leads land, and the from-address) live in `deploy/k8s/configmap.yaml`.
-   Editing the YAML and running kubectl is my side (or her cluster person), not hers to type. She creates the accounts and reads me the values; I place them. Full step-by-steps are in my setup-guides/ (on my phone).
+   After the repo transfer this is all on her end: she creates the accounts and puts the values where they go, the build-arg ones into her build, the secrets into `deploy/k8s/secret.yaml`, the emails into `configmap.yaml`. I'm guiding, telling her exactly where each one lands. She follows DEPLOYMENT.md for the precise commands; my setup-guides/ (on my phone) cover the account creation.
 
 3. **Domain and email records.** "I'll point cronedge.com at your cluster and add the email verification records. These propagate on your registrar's clock, sometimes quick, sometimes slower, so we kick them off early." (DNS A/AAAA to her ingress + TLS via cert-manager; Resend SPF/DKIM records.)
 
