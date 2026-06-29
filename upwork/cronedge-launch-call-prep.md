@@ -39,7 +39,7 @@ The order, and roughly what I say at each step:
    - **Baked into the image when I build it** (build args, NOT pasted into any cluster file): the site URL, the Turnstile site key, the analytics token, the GitHub repo (owner/repo), the GitHub app slug. I handle these in the build command.
    - **Into `deploy/k8s/secret.yaml`** (copied from `secret.example.yaml`): `RESEND_API_KEY`, `RESEND_AUDIENCE_ID`, `TURNSTILE_SECRET_KEY`, `KEYSTATIC_SECRET` (a random string I generate), `KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`.
    - The lead emails (where contact leads land, and the from-address) live in `deploy/k8s/configmap.yaml`.
-   After the repo transfer this is all on her end: she creates the accounts and puts the values where they go, the build-arg ones into her build, the secrets into `deploy/k8s/secret.yaml`, the emails into `configmap.yaml`. I'm guiding, telling her exactly where each one lands. She follows DEPLOYMENT.md for the precise commands; my setup-guides/ (on my phone) cover the account creation.
+   After the repo transfer this is all on her end: she creates the accounts and puts the values where they go, the build-arg ones into her build, the secrets into `deploy/k8s/secret.yaml`, the emails into `configmap.yaml`. I'm guiding, telling her exactly where each one lands. She follows DEPLOYMENT.md for the precise commands, Step 1 covers creating the accounts and Step 6 the GitHub App.
 
 3. **Domain and email records.** "I'll point cronedge.com at your cluster and add the email verification records. These propagate on your registrar's clock, sometimes quick, sometimes slower, so we kick them off early." (DNS A/AAAA to her ingress + TLS via cert-manager; Resend SPF/DKIM records.)
 
@@ -106,7 +106,7 @@ Tactics I keep in mind:
 - The live preview (the three real checklists are wired in on /resources).
 - The /admin editor.
 - deploy/DEPLOYMENT.md.
-- My account-setup guides (on my phone or a side window, not shared) so I can walk her through each account smoothly.
+- DEPLOYMENT.md (Step 1 for the accounts, Step 6 for the GitHub App) so I can walk her through each account smoothly.
 
 ## If the Docker "high vulnerability" flag comes up
 
