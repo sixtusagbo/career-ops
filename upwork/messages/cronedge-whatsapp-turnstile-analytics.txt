@@ -1,0 +1,7 @@
+Pushed the site to the repo, thanks for the Maintainer bump.
+
+I need two things off your Cloudflare to finish the build:
+
+1. Turnstile (the spam check on the contact form). In Cloudflare: Turnstile → Add widget → give it a name and add cronedge.com as the hostname. It generates a Site Key and a Secret Key. Send me the Site Key here, and the Secret Key via onetimesecret (like the Resend key).
+
+2. Web Analytics token. In Cloudflare: Analytics & Logs → Web Analytics → add cronedge.com. It shows a small snippet with token: "xxxx". Send me that token.
