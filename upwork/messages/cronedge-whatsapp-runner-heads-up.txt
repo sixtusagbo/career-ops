@@ -1,0 +1,1 @@
+Nice. One thing for the runner: the build job uses Docker-in-Docker, so the runner needs Docker available. On a Kubernetes runner that means privileged mode. If you'd rather not run privileged, say the word and I'll switch the build to Kaniko (rootless, no daemon). Either works.
