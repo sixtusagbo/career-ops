@@ -1,0 +1,5 @@
+Okay. I've checked it, and the runner's service account doesn't have rights in the cronedge namespace yet, which is expected since it's locked down by default. I added deploy/k8s/runner-rbac.yaml to the repo, a Role + RoleBinding that lets the gitlab-runner namespace deploy into cronedge. Apply it once from your side:
+
+kubectl apply -f deploy/k8s/runner-rbac.yaml
+
+or paste it into Rancher > Import YAML. Once that's in, I deploy straight through the pipeline, no Rancher needed. That's the last thing I need from you to get it live.

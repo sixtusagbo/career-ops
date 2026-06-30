@@ -1,0 +1,5 @@
+Quick one: rancher.cronplane.io is returning Cloudflare 523 (origin unreachable) for me right now, both the API and the UI/dashboard. So Cloudflare's up but it can't reach the Rancher origin behind it, and the private 192.168.0.240 isn't routable from my end. Net effect, I can't reach the cluster to deploy yet.
+
+Could be the tunnel/origin that exposes Rancher to Cloudflare went down when you stepped away. Whenever you're back, just confirm Rancher's reachable at rancher.cronplane.io and I'll take it from there.
+
+Everything else is ready on my side, so once I can reach it the deploy is a few minutes: kubeconfig sorted, manifests match your setup (gitlab-app pull secret, cronedge namespace, the letsencrypt wildcard), Resend's verified. Ping me when it's back up.

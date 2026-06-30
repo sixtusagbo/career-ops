@@ -1,0 +1,3 @@
+Got it, that explains the 523. Rancher's LAN-only with no tunnel, so it's unreachable from outside, no problem.
+
+I'll deploy from inside the cluster through the GitLab runner instead, since GitLab is tunneled and the runner sits in the cluster, so it can reach the API directly. Just pushed a quick check to see whether the runner's service account has rights to deploy into the cronedge namespace. If it does, I roll the whole site out through the pipeline, no Rancher needed. If it's locked down, I'll send you the exact RBAC to grant the runner. Checking now.

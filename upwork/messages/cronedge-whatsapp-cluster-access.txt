@@ -1,0 +1,9 @@
+Site's built and the image is in your registry (registry.cronplane.io/cronplane/cronedge-website:latest). Three things to get it live:
+
+1. A kubeconfig so I can deploy from my end. The Download KubeConfig in Rancher routes through rancher.cronplane.io, so it works remotely. I'll apply the manifests and get the app's TLS set up off your letsencrypt issuer. We can set up the pipeline's own deploy credential after.
+
+2. The cluster needs to pull from the private registry. Either a Deploy Token with read_registry scope (I'll create the pull secret), or if k3s already has registry creds configured, say so and we skip it.
+
+3. Is cronedge.com verified in your Resend (SPF/DKIM)? The contact form and resource downloads send from notifications@cronedge.com and won't deliver until the domain's verified there.
+
+That's all I need. DNS, the wildcard cert, and the pipeline are sorted. The only after-live item is the content editor (Keystatic needs a GitHub-backed repo since it has no GitLab backend), we'll figure that out once you're live.
