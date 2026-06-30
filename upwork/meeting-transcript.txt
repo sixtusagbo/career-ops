@@ -1,0 +1,767 @@
+Anuoluwapo Balogun [00:00]: Okay, yeah, good. Good. Thank you for the work done so far. Give me a second. I'm trying to Get desserts for that domain because I've been tired of work since winning out that I'm not even off work yet. About this time. Just, I just quickly need to
+
+Sixtus Agbo [00:10]: oh, We should. Use a good time for you. Hey
+
+Anuoluwapo Balogun [00:15]: No, it's okay. It's okay because I don't even think I'll have a good time this week. What's fine? The, it shouldn't take me a long time to do. I just Need to remember what I did the last time, okay?
+
+Sixtus Agbo [00:35]: I start.
+
+Anuoluwapo Balogun [00:37]: Know, I'm not purchasing it. Sorry I'm trying to pull it from. Cloudflare.
+
+Sixtus Agbo [00:46]: Okay, well, that's good.
+
+Anuoluwapo Balogun [00:52]: Right. Okay. Tell me that I confuse. Okay. And good seconds. Okay. so hopefully, That should work because I don't know this in a while. Yeah.
+
+Sixtus Agbo [03:29]: Alright, you can.
+
+Anuoluwapo Balogun [03:32]: Desserts. What are the other things that you need?
+
+Sixtus Agbo [03:51]: From, I'm gonna Walk you through for the things I need, we don't need to go down
+
+Anuoluwapo Balogun [03:56]: Okay.
+
+Sixtus Agbo [03:56]: so much right now. Right. So what the first thing you obviously is you tell representing that would transfer your fires to then need humanities plus that which you already have and you need to tell us history, you need a container registry, the Woods images.
+
+Anuoluwapo Balogun [04:12]: Really.
+
+Sixtus Agbo [04:20]: And in access to college that's called DNS. And from doing sound yes that's your DNS is on CLOUDFLARE, right?
+
+Anuoluwapo Balogun [04:30]: Well actually.
+
+Sixtus Agbo [04:30]: Not sure.
+
+Anuoluwapo Balogun [04:32]: Well, I'm managing it to clubs and managing is about fair. Yes.
+
+Sixtus Agbo [04:33]: So you don't speak some units to set up. We can start threshold. Thank you.
+
+Anuoluwapo Balogun [04:47]: Okay. Okay.
+
+Sixtus Agbo [04:51]: Thank you so much. Thank you for making the time inside stone and Live on the previous. So tonight I want us to listen things what you treat, and the editor. So if I run it yourself,
+
+Anuoluwapo Balogun [05:04]: Okay.
+
+Sixtus Agbo [05:05]: And getting lunch on your own. You know, infrastructure, moving and then talk to the clients. What are you mentioned? That sounds good, right?
+
+Anuoluwapo Balogun [05:14]: Yeah, of course, that's we I plant on actually talking about that tonight. Okay, so let me start from showing my screen. I think that's like a good place to start. Hello.
+
+Sixtus Agbo [05:33]: I don't share my mind. First, I'll show you the admin and
+
+Anuoluwapo Balogun [05:37]: Okay. Okay, yeah. Okay. Let's let's
+
+Sixtus Agbo [05:39]: Right on. You see which was in. Wow, I'm teaching my interesting. Yeah. All right. Can you see my screen now?
+
+Anuoluwapo Balogun [06:01]: Yes.
+
+Sixtus Agbo [06:02]: All right, so the admin is at slash key static. You can also reach into its Life. Again.
+
+Anuoluwapo Balogun [06:12]: Okay, that makes sense.
+
+Sixtus Agbo [06:13]: And it brings you that you just slash you started. I made that out today. Tunisia for you to remember like sashab me and a confuse and you didn't when
+
+Anuoluwapo Balogun [06:22]: Mm-hmm.
+
+Sixtus Agbo [06:25]: you're done. So currently this and I need to screen, so that's I'll keep everything. Starting in the side fast, these on this group, and the timeline that we had, So, currently you have said, This is a pricing for dogs and open road, we don't know at the moment. now, I'm going to, this is the site I'm running this, this is in local, you would
+
+Anuoluwapo Balogun [06:59]: Yeah, I can see it.
+
+Sixtus Agbo [07:00]: Currently. So, I'm going to edit something so that you just see. And even if we are done, if you have any correlations, like still, you can let me know. I mean, I haven't seen it a few years, so I can still like, alright
+
+Anuoluwapo Balogun [07:14]: Yeah. Okay.
+
+Sixtus Agbo [07:18]: Is that I love this configuration if you? Yeah, this post They were openings you see me against why happens. Change back. So now when you
+
+Anuoluwapo Balogun [07:53]: Next.
+
+Sixtus Agbo [07:58]: change here, You just happens. You just saves because this is a local dude and you see it immediately, but when you're in production, let me change something. The process is fairly similar only really difference God. This pipeline, your pipeline will have to deploy. It's of coming. So anything.
+
+Anuoluwapo Balogun [08:21]: That makes sense. Yeah latest yeah.
+
+Sixtus Agbo [08:23]: Yeah. So and Yeah, so every time you change and you should see It's making comment down under deploy it. So I hope your pipeline will deploys, right? You said you have a pipeline already that you plug it into.
+
+Anuoluwapo Balogun [08:35]: the past few weeks. um,
+
+Sixtus Agbo [08:47]: Okay.
+
+Anuoluwapo Balogun [08:49]: so,
+
+Sixtus Agbo [08:50]: I'm still available though. I'm not, like I said earlier, that's why I was asking you. If it's nice looking for you because I'm still
+
+Anuoluwapo Balogun [08:58]: at this point, I think I'm going to take You up on that because I thought it was something I wanted to take it off you. I didn't want you to, you know, start working on that. But Apparently, yeah, maybe I'm actually pick you up on that of working on the pipeline for me.
+
+Sixtus Agbo [09:16]: All right, that's, that's okay. I was even gonna say that if you are like babies, like, it's not already tonight. Like you can't really want out and do like the transfer and then I'll give you time to set up seasons that I can't. Instead of the pipeline for you, I can't do that. And I'll just let you know and anything I need like configuration. Yeah, I'm still.
+
+Anuoluwapo Balogun [09:38]: Yeah. Okay. Okay, just, I really like to well right now. I don't necessarily have a secret
+
+Sixtus Agbo [09:43]: I can't do that.
+
+Anuoluwapo Balogun [09:48]: injector, but I'd like very much to use get lab variables or the envy files. Or use the clusters secrets.
+
+Sixtus Agbo [09:59]: Before.
+
+Anuoluwapo Balogun [10:02]: For reference. So,
+
+Sixtus Agbo [10:03]: Or. Yeah, I yeah to kill that.
+
+Anuoluwapo Balogun [10:04]: Either way. Okay.
+
+Sixtus Agbo [10:09]: sports, you can have people managing a specific side like you know, or resources, you understand what I'm saying?
+
+Anuoluwapo Balogun [10:55]: Mm-hmm.
+
+Sixtus Agbo [10:55]: so, Yeah. Um for now, let's start with you. Listen, since you said Yellow, one is not a, let me hand over. The reports you and What do you do? For me so that I'll still be able to see someone down. This sitting on the pipeline, a set of the pipeline. Show this Houston and Unity. You just need this argument as a collaborator and as soon as you have done you can remove from you beautiful so I don't have
+
+Anuoluwapo Balogun [11:22]: Yeah.
+
+Sixtus Agbo [11:25]: access to it. So once I transferred you have all device sitting in your machine or the out I won't have it on my guitar before anymore. Here. So
+
+Anuoluwapo Balogun [11:35]: Okay. so, um,
+
+Sixtus Agbo [11:37]: so, I'm going to setting, You have a guitar background, right?
+
+Anuoluwapo Balogun [11:43]: I've used good lab actually not Github.
+
+Sixtus Agbo [11:48]: Okay.
+
+Anuoluwapo Balogun [11:49]: Yeah, I have a Good love. And and looking to because I just added another person recently, I'm trying to see how I can I do. Just get the project Members. So, just most likely need your email for this.
+
+Sixtus Agbo [12:11]: Okay, he single, or noise because it's an organizational accounts were
+
+Anuoluwapo Balogun [12:20]: You know, you can use your private email doesn't matter.
+
+Sixtus Agbo [12:22]: An individual iPhone. You see?
+
+Anuoluwapo Balogun [12:25]: Yeah, it's Enterprise but I I can use your regular email.
+
+Sixtus Agbo [12:32]: alright, anyway, since I've been here,
+
+Anuoluwapo Balogun [12:38]: Just give me a regular email. Yeah, I can't see because I actually moved.
+
+Sixtus Agbo [12:39]: But I think it's done.
+
+Anuoluwapo Balogun [12:44]: Okay, what's that?
+
+Sixtus Agbo [12:44]: I'll send it to you right now. In paintings in chat, alternations are not work. Wanted.
+
+Anuoluwapo Balogun [12:51]: This charts, it doesn't matter.
+
+Sixtus Agbo [13:06]: Know. We should go Asian food.
+
+Anuoluwapo Balogun [13:09]: and I'm pretty sure no need to just
+
+Sixtus Agbo [13:14]: 0 six.
+
+Anuoluwapo Balogun [13:15]: Not always. Access control. Can you check your email?
+
+Sixtus Agbo [15:21]: Yeah.
+
+Anuoluwapo Balogun [15:24]: So did you try to access? Okay, okay.
+
+Sixtus Agbo [15:29]: And completely sure. I have an account. It was an anastas marketplace that I walked on. Me.
+
+Anuoluwapo Balogun [16:00]: American woman.
+
+Sixtus Agbo [16:01]: It's almost right now. from many concern like another, Good body works. I've done that. It's only my email. You said you I didn't mean to your organization.
+
+Anuoluwapo Balogun [16:16]: Yeah, I bet you but I'm waiting for. I think it's supposed to pop up here after you've created an account, because if you try to log in, I'm pretty sure.
+
+Sixtus Agbo [16:29]: can try again, because
+
+Anuoluwapo Balogun [16:30]: You you'd get?
+
+Sixtus Agbo [16:31]: I believe in the accounts used for.
+
+Anuoluwapo Balogun [16:35]: So, you try to log in, right?
+
+Sixtus Agbo [16:38]: Yeah, you go back to God.
+
+Anuoluwapo Balogun [16:40]: And then you feel?
+
+Sixtus Agbo [16:43]: And I'm not doing already, I think. It's asking me to create the important project in my room, I'll see one.
+
+Anuoluwapo Balogun [16:52]: Let me see, let me see. Are you showing your screen?
+
+Sixtus Agbo [16:54]: Let me just increase and let me just, yeah, let me show my screen. Follow me. I'll just speaks any covered with you.
+
+Anuoluwapo Balogun [17:07]: Okay, so oh no, it's not meant to go to that.
+
+Sixtus Agbo [17:07]: Just a blank per day. Snow templates.
+
+Anuoluwapo Balogun [17:10]: So it's not meant to go to that, that gitlab.com if it actually really trying to access. So this is it. Hold on. This is where you're trying to hit. This is my good love. Hosted right here. Isn't a chat. I post I posted it in a chat.
+
+Sixtus Agbo [17:38]: Sorry, your child. Oh yeah. He needs to sign in. I say new Sso. There's no, it's a society in here.
+
+Anuoluwapo Balogun [18:12]: No, there's no access to sign in. I think.
+
+Sixtus Agbo [18:15]: so, I have to really study
+
+Anuoluwapo Balogun [18:18]: Yes.
+
+Sixtus Agbo [18:27]: But I'm gonna make my own password. Let's see. Shouldn't take long. He's surely. I like it. All right, that's more secure.
+
+Anuoluwapo Balogun [18:46]: Okay, for one.
+
+Sixtus Agbo [18:47]: so, please And money.
+
+Anuoluwapo Balogun [19:00]: Yeah, you probably get an error. Trying to work. Yeah. You know that. Yeah into a proof. Yeah, I need to approve.
+
+Sixtus Agbo [19:05]: Indianapolis.
+
+Anuoluwapo Balogun [19:08]: That was what I was trying to remember. Like, I do know that Okay, exactly. Now you popped up So, try to log in again.
+
+Sixtus Agbo [19:26]: Okay.
+
+Anuoluwapo Balogun [19:43]: You can just close that out if
+
+Sixtus Agbo [19:49]: All right, I sixtus being highlights.
+
+Anuoluwapo Balogun [19:50]: So, you should. Yeah, you should be able to Don't try to use SSH to clone because I don't have that configured but should be able to turn very HTTP. Um yeah. Go to groups.
+
+Sixtus Agbo [20:03]: Foreign.
+
+Anuoluwapo Balogun [20:05]: Because, I'm pretty sure I added you to project. Yeah, currently until click on Crump in.
+
+Sixtus Agbo [20:12]: Something.
+
+Anuoluwapo Balogun [20:15]: and then, if you see Cornage website or something, Yeah. So furniture website. Yeah, that's the one. Yeah, it's empty. So Feel free to push the.
+
+Sixtus Agbo [20:33]: Okay. All right, Army does here and then I'll push to this. I have right conditions, like apple screenshot, right?
+
+Anuoluwapo Balogun [20:46]: yes, your developers so you should Yeah. Be able to do. Pretty much anything.
+
+Sixtus Agbo [20:53]: All right. Thank you. Leave, that's it. So I'm gonna set up rooms to this place, and I'm gonna place to this place and then I'll let you know if I need any of that thing for the pipeline.
+
+Anuoluwapo Balogun [21:08]: okay, so it's so everything is going to be In the cluster. So that means that you don't need a VM per se. For something to run like, on a VM. Do you?
+
+Sixtus Agbo [21:29]: yeah, I know, I I
+
+Anuoluwapo Balogun [21:34]: so don't
+
+Sixtus Agbo [21:35]: And I prepared some Yama configs for the First off.
+
+Anuoluwapo Balogun [21:42]: Yeah, more config for the cluster. Yeah, more config let's see.
+
+Sixtus Agbo [21:46]: yeah, the config mark, you deployment
+
+Anuoluwapo Balogun [21:47]: Well, okay, I know that's that's all on the cluster, so nothing. So if you
+
+Sixtus Agbo [21:52]: Yeah. So
+
+Anuoluwapo Balogun [21:53]: Okay, I'm going to do something one second. Let me let me quickly pull. Let me quickly test something. Okay. until next, I will find My book is not up crazy. It's Okay.
+
+Sixtus Agbo [23:21]: We can actually do something we can't do before.
+
+Anuoluwapo Balogun [23:28]: I just want to see how Possible, it's going to be for you to push to. To the registry. I I know I did something read with the registry, the last time
+
+Sixtus Agbo [23:37]: Okay.
+
+Anuoluwapo Balogun [23:44]: I worked with it, so I I think I want to be sure that I did not actually mess it
+
+Sixtus Agbo [23:50]: Around.
+
+Anuoluwapo Balogun [23:58]: up. So, okay. um, let me see, this is Projects. Let's see, websites. and then, Sorry, I should have don't know this before you even get to know the score so don't wasting your time.
+
+Sixtus Agbo [24:23]: You know, routines, right? And then
+
+Anuoluwapo Balogun [24:29]: Next. And call it. Into next. Open. alright, type of Wow. Happy. Docker push.
+
+Sixtus Agbo [25:19]: He?
+
+Anuoluwapo Balogun [25:20]: Yeah. Oh I am not logged in I thought I was. Looking.
+
+Sixtus Agbo [25:29]: Apart from here, this figure we can set up the middle distance. The accounts these accounts you need now, because our needs.
+
+Anuoluwapo Balogun [25:36]: I think it should be. Yes. Sorry I'm sorry you were saying
+
+Sixtus Agbo [25:45]: in I said apart from the registry that only our needs you to set up the
+
+Anuoluwapo Balogun [25:47]: Mm-hmm.
+
+Sixtus Agbo [25:51]: accounts, you can share your screen, a custom sharing so that I found
+
+Anuoluwapo Balogun [25:56]: What account?
+
+Sixtus Agbo [25:56]: They are not. For in the account to understand and you already have clouds there. So I believe, it's just so yeah, it's just to go to the service.
+
+Anuoluwapo Balogun [26:05]: I have I have recent to I have listened to will, you need like
+
+Sixtus Agbo [26:09]: Okay, you understand account already.
+
+Anuoluwapo Balogun [26:11]: Yes, yes.
+
+Sixtus Agbo [26:12]: I'll need you if you and yeah, no. Thank you understand. And then so integrate
+
+Anuoluwapo Balogun [26:15]: If you okay?
+
+Sixtus Agbo [26:18]: on audience are complete ID. Only entire then on CLOUDFLARE. I need to I decides which I believe is already added by now because I mean DNA is there and just immensely to copy inside key and security from Tonsai. I'm not really.
+
+Anuoluwapo Balogun [26:39]: Complete. This the iPhone. If you want to see my screen that's completely fine. Um, where you was? Was okay, autistic here. And it's okay and share this.
+
+Sixtus Agbo [27:00]: you know, and I need
+
+Anuoluwapo Balogun [27:02]: Right. I'm trying to remember.
+
+Sixtus Agbo [27:04]: It's not really much if
+
+Anuoluwapo Balogun [27:08]: so, Yeah, I just wanted.
+
+Sixtus Agbo [27:10]: Domain propagation is fast. You just don't say, sorry, you can't go on.
+
+Anuoluwapo Balogun [27:14]: I have the PI keys. Good luck. Good love, good. Love Okay, great. I'm going to be really stupid to. Let me do that. Let's try this. Well. Hold on it because that's the right password. let me look out and try to login with Boots again. Oh, that's it. okay, so let's try to yeah, that's exactly what I was trying to make sure that you could actually
+
+Sixtus Agbo [28:50]: Push this new register.
+
+Anuoluwapo Balogun [28:50]: First. Oh wait, no.
+
+Sixtus Agbo [28:55]: just,
+
+Anuoluwapo Balogun [29:03]: I have that spelled wrong. Yeah, of course. So, after we tag that And let me try to pushing in. Alright, you should be good then.
+
+Sixtus Agbo [29:24]: Now.
+
+Anuoluwapo Balogun [29:25]: Let me see. Let's see. it's I guess. I think I used it in. Yeah, exactly. But okay, exactly. So, I'm going to send this. API key to you.
+
+Sixtus Agbo [30:35]: 9.
+
+Anuoluwapo Balogun [30:43]: EPA. Hee. And then yeah, that's for 7 days. So, I just sent it to you on slack. And then, what else?
+
+Sixtus Agbo [31:07]: One slack on the chart.
+
+Anuoluwapo Balogun [31:09]: Sorry, on the chat. Yes, you said you needed a couple of things from me for reasonably. Okay, let's go in there because I'm pretty sure that I have not created an audience. I just happened to have it.
+
+Sixtus Agbo [31:32]: Alright.
+
+Anuoluwapo Balogun [31:35]: Make sure that's too. Study, okay. So, I'm pretty sure they have an audience. You said, you needed an audience, right?
+
+Sixtus Agbo [31:57]: Yeah.
+
+Anuoluwapo Balogun [31:59]: So, let me quickly borrow my husband, so the end.
+
+Sixtus Agbo [32:01]: This cigarettes is the.
+
+Anuoluwapo Balogun [32:05]: What?
+
+Sixtus Agbo [32:05]: Region that of the Registry, right?
+
+Anuoluwapo Balogun [32:09]: The secret is for recent.
+
+Sixtus Agbo [32:13]: Percent.
+
+Anuoluwapo Balogun [32:14]: Yeah, recent API key.
+
+Sixtus Agbo [32:17]: Okay.
+
+Anuoluwapo Balogun [32:30]: So let me click Create an audience. Let me borrowed areas. Yes,
+
+Sixtus Agbo [32:43]: Oh, I just opened it now. I just say,
+
+Anuoluwapo Balogun [32:47]: Okay.
+
+Sixtus Agbo [32:49]: I I didn't open it then before I have about that.
+
+Anuoluwapo Balogun [32:52]: Yeah. Okay. It's okay. Yeah. So, we have an audience. Right. What else do you need? The Audience ID or what?
+
+Sixtus Agbo [33:13]: Yes, students ID.
+
+Anuoluwapo Balogun [33:15]: Where do I grab that? Again properties.
+
+Sixtus Agbo [33:19]: Don't really.
+
+Anuoluwapo Balogun [33:26]: No, I import that is he as V? Oh yeah, General.
+
+Sixtus Agbo [33:26]: Bringing Homepage from from Add Contact. Would you segments?
+
+Anuoluwapo Balogun [33:37]: What I have not so wait, hold on.
+
+Sixtus Agbo [33:40]: Yes.
+
+Anuoluwapo Balogun [33:42]: Exactly. So segments. Or so I need to add people.
+
+Sixtus Agbo [33:51]: very,
+
+Anuoluwapo Balogun [33:52]: Anyway, just like, let me just copy the idea because
+
+Sixtus Agbo [33:54]: wait, you Yeah, yeah. That's it.
+
+Anuoluwapo Balogun [34:03]: General if I, and
+
+Sixtus Agbo [34:04]: so, come
+
+Anuoluwapo Balogun [34:07]: This is for chronicia.
+
+Sixtus Agbo [34:50]: You know.
+
+Anuoluwapo Balogun [34:52]: Yeah, yelling display here. just, Okay. What else?
+
+Sixtus Agbo [35:03]: See. The next thing should be proud there. I'm second.
+
+Anuoluwapo Balogun [35:10]: Okay. Now yeah, I think at some point that's so this is this might be where I would be um, Oh, I haven't really made a decision.
+
+Sixtus Agbo [35:25]: Wait, hold on. Can you go back to Recent?
+
+Anuoluwapo Balogun [35:32]: M.
+
+Sixtus Agbo [35:39]: Did you delete all the contacts? You imported.
+
+Anuoluwapo Balogun [35:48]: No, I did not which is look at. See. So it I think it's just this segment.
+
+Sixtus Agbo [35:51]: It's actually weird that goes up and comes with.
+
+Anuoluwapo Balogun [35:55]: yeah, it's the segment itself, the general segments that does not have
+
+Sixtus Agbo [35:55]: Yeah.
+
+Anuoluwapo Balogun [36:01]: A contact. so,
+
+Sixtus Agbo [36:04]: Okay, click on the general, let me see. Not like inside sayings. Let me see that. I mean,
+
+Anuoluwapo Balogun [36:12]: See.
+
+Sixtus Agbo [36:13]: Yeah.
+
+Anuoluwapo Balogun [36:18]: You see? So, maybe I need to probably add the contacts, because you can take my Instagram
+
+Sixtus Agbo [36:25]: These people into.
+
+Anuoluwapo Balogun [36:26]: here. They have. Yeah, they have, they don't have segments.
+
+Sixtus Agbo [36:29]: you know, consume
+
+Anuoluwapo Balogun [36:32]: So that one. Okay General. so, if I go to segment and I try to click on General,
+
+Sixtus Agbo [36:39]: and you don't know when you are looked like,
+
+Anuoluwapo Balogun [36:40]: Mmm, let's refresh again. So, all contacts. Engineer. Oh, I actually did not add them to Okay, let's try it again. Let me move this series selected. I did had to segments General and Okay, so if I go to segments now, click General. Oh, now I have that makes sense.
+
+Sixtus Agbo [37:25]: You know, how people here?
+
+Anuoluwapo Balogun [37:26]: Yes. What else? Yeah, so let's talk about the
+
+Sixtus Agbo [37:37]: Closer.
+
+Anuoluwapo Balogun [37:39]: Is that? I have not decided if I want. Let's include to be. in charge of,
+
+Sixtus Agbo [37:57]: A room, really? I'm not really sure.
+
+Anuoluwapo Balogun [38:00]: because, Just. Yeah, that's what I was looking for. Thank you.
+
+Sixtus Agbo [38:02]: Any. I'm not really sure. Amy.
+
+Anuoluwapo Balogun [38:08]: Okay.
+
+Sixtus Agbo [38:10]: you really sure that you really do against ID, I mean, Let me see if I can't call the API, it's you sent me.
+
+Anuoluwapo Balogun [38:27]: Was. From this one. yeah, it's not worth it a big So it's it's this one.
+
+Sixtus Agbo [39:24]: In, and I decides.
+
+Anuoluwapo Balogun [39:30]: I know that's for a completely different thing. So, let me quickly grab a templates.
+
+Sixtus Agbo [39:34]: Yeah.
+
+Anuoluwapo Balogun [39:43]: For. Well, I'm ready to start looking for documentation. Let's see. What do I need my email? If you open secret. Okay, so let me do staging first and then see what happens.
+
+Sixtus Agbo [40:21]: I've run the I tried to get it from the API. Can you increase the commissions for detention living for the? API Keys, and
+
+Anuoluwapo Balogun [40:33]: Recent.
+
+Sixtus Agbo [40:35]: yes, you can do that from their sentence for
+
+Anuoluwapo Balogun [40:38]: Okay. Oh, I was asking if it was for yourself or something else.
+
+Sixtus Agbo [40:41]: sign of the
+
+Anuoluwapo Balogun [40:51]: Mmm. What will I get that again?
+
+Sixtus Agbo [40:53]: this for me to add the person, I have an audience.
+
+Anuoluwapo Balogun [40:57]: I know, I know, I know.
+
+Sixtus Agbo [40:59]: Yeah. Click on the three dots. Not to create a new one. Yeah. Okay.
+
+Anuoluwapo Balogun [41:09]: Permission full access that works.
+
+Sixtus Agbo [41:12]: Yeah.
+
+Anuoluwapo Balogun [41:13]: Okay.
+
+Sixtus Agbo [41:14]: Well, thank you. Let me try anything like this again.
+
+Anuoluwapo Balogun [41:19]: No, don't worry what I need to be done with this system before she wakes up. Don't disturb me again.
+
+Sixtus Agbo [41:31]: all right, so
+
+Anuoluwapo Balogun [41:32]: Okay.
+
+Sixtus Agbo [41:46]: We don't need to worry about the audience again.
+
+Anuoluwapo Balogun [41:48]: Okay.
+
+Sixtus Agbo [41:49]: I've got any from the API.
+
+Anuoluwapo Balogun [41:59]: Yeah, I didn't have this. just, Call it. Yes. Well.
+
+Sixtus Agbo [42:28]: Well, hold on. Yeah, painting whatever you need. Don't study.
+
+Anuoluwapo Balogun [42:33]: Is quite different.
+
+Sixtus Agbo [42:47]: so,
+
+Anuoluwapo Balogun [42:48]: Mmm. Okay. Hmm. I want to see what's happening. Only. You go here. Coming. I am, what? Good. Just. Hold on. Orders. Let's see. Oh yeah, that makes sense. Keep system. So the other is active, okay, it's painting. This was going on with the other. so Baba, I mean, if this staging works, then I'd be able to
+
+Sixtus Agbo [47:43]: Sending.
+
+Anuoluwapo Balogun [47:46]: Still pending now. Can I check? Now what I do not know is if this is going to pop up on Because I actually did if it's going to pop up here. Or. This is going to pop up in. On AWS, because I have it as a hosted zone in AWS.
+
+Sixtus Agbo [48:14]: The.
+
+Anuoluwapo Balogun [48:16]: My Adobe's account and that's why I just wanted to quickly, see? Because, yeah, I thought I could do it the way I currently I'm currently running that are you? But I don't want to do it that way. So anyway, I'm not going to. Okay, so it's okay. No, that's the cluster issuer. You still paying this acme staging. Is what I need to. I don't
+
+Sixtus Agbo [48:42]: The information.
+
+Anuoluwapo Balogun [48:45]: Okay, so Let's end soon. Oh maybe at yeah I did not do that so I didn't add it here. I thought I did it's just something. And it's even been myself to speak with this. Yeah. So it's another Anyway, I'm going to probably mess with this tonight and see if I can get it working. so that All you have to do is just to use the Certificates from within the cluster and I won't have to start. I don't know how you usually configure this desserts. So this the cluster would be in charge of
+
+Sixtus Agbo [50:40]: All right.
+
+Anuoluwapo Balogun [50:40]: For us.
+
+Sixtus Agbo [50:45]: listen, let's encrypts that I'd like to use to Possible. It's work for now. I think go to I believe what to departs that you don't need to please? Okay. If I actually need
+
+Anuoluwapo Balogun [51:02]: Oh, it's imagine. It's active.
+
+Sixtus Agbo [51:03]: Maybe only it's actually it's actually.
+
+Anuoluwapo Balogun [51:06]: Acme staging. Yeah. Okay. Without this teaching, If you blah, blah, blah. I'm going to call this. It's encrypts. And then certificate. But also clone this. No, I don't want to clean it. Oh, actually certificates of certification because so, Call this.
+
+Sixtus Agbo [52:31]: You know, son. Singing, because that's probably in.
+
+Anuoluwapo Balogun [52:33]: see, maybe if, if this works to be I like it actually move complain from From. Internet. Because this is right usually handle the whole certificates. So I can just move it down. Yeah. Okay, don't let me tell you of, please. I feel like I'm wasting your time.
+
+Sixtus Agbo [54:14]: Oh no, it's okay. I'm here.
+
+Anuoluwapo Balogun [54:15]: You have a?
+
+Sixtus Agbo [54:19]: And I'm still up to morning. So I'll try to link into Playment tonight. We are still only great kiss. If I don't understand me,
+
+Anuoluwapo Balogun [54:28]: Yes, you probably 7am your time.
+
+Sixtus Agbo [54:33]: 7am, my time.
+
+Anuoluwapo Balogun [54:33]: I'm still up. Yeah. Yes, probably still be up to that time, so,
+
+Sixtus Agbo [54:40]: Okay, that's that's things your time. That's about six hours. You
+
+Anuoluwapo Balogun [54:40]: Yeah, you can just
+
+Sixtus Agbo [54:46]: Soon. As So, please one.
+
+Anuoluwapo Balogun [54:52]: Shoot. Yeah, I'm just telling you, you can definitely Ah, you can. Yes, you can. Reach out to me. On Upwork. Email me. I don't know. I can do you have email?
+
+Sixtus Agbo [55:14]: Anyone named more comfortable for you?
+
+Anuoluwapo Balogun [55:17]: Yeah. Oh, you can send me message on Whatsapp to because that one, I'll
+
+Sixtus Agbo [55:17]: I don't know.
+
+Anuoluwapo Balogun [55:21]: definitely get it faster than any other.
+
+Sixtus Agbo [55:25]: All right.
+
+Anuoluwapo Balogun [55:27]: Let me where's the okay? There is you can like, Send me a message on Whatsapp if you message meant. I'm no respond. It was my phone number again. Hmm. Okay. Yeah.
+
+Sixtus Agbo [55:42]: don't need to use the first one. Usually, the way I used,
+
+Anuoluwapo Balogun [55:52]: What. Okay?
+
+Sixtus Agbo [55:53]: I usually generates, it's
+
+Anuoluwapo Balogun [55:53]: How do you really great?
+
+Sixtus Agbo [55:57]: Already. It's commands like Yeah easily GUI so that was why I can't like To give you since, and we're watching, you do it. It's wonderful and easier. But I do this commands to do
+
+Anuoluwapo Balogun [56:16]: Oh, wow. That's that's
+
+Sixtus Agbo [56:18]: Anytime. Yeah, and coming out. So I didn't really
+
+Anuoluwapo Balogun [56:19]: Yeah.
+
+Sixtus Agbo [56:23]: But it's still. Okay. I'll just use the white cards you created, then
+
+Anuoluwapo Balogun [56:23]: Yeah. Well yeah, I just wanted to be you know, active so that's Oh yeah, so seems like we're good.
+
+Sixtus Agbo [56:33]: So much.
+
+Anuoluwapo Balogun [56:34]: Yeah.
+
+Sixtus Agbo [56:35]: Really. Bringing up, I'm still, I'm going to missing you on what's up right now.
+
+Anuoluwapo Balogun [56:39]: Okay.
+
+Sixtus Agbo [56:43]: Yeah, you see.
+
+Anuoluwapo Balogun [56:44]: All right. Thank you so much and I must say that I really like the whole design, the whole world website design, as matter. From my husband was like, Can I talk to these guys that I can work on my website too? So I can't, you know, design it
+
+Sixtus Agbo [57:00]: Or.
+
+Anuoluwapo Balogun [57:01]: because he has, he has a website that is functional but it really likes to be, you know, design that you give in mind and I think from you I got like ideas on how to like you if you noticed the, what's the word? The documents I sent to you. Actually got the. I used the one used for. I don't know what you guys call it.
+
+Sixtus Agbo [57:27]: yeah, the resources in the PDF,
+
+Anuoluwapo Balogun [57:29]: the idea from here. So yeah, it's really nice. Thank you. Thank you for the work that you've done.
+
+Sixtus Agbo [57:52]: Well, thank you so much. I'm I'm still, I don't really have. You would say
+
+Anuoluwapo Balogun [58:00]: So, yeah, Visa we're going to talk about
+
+Sixtus Agbo [58:01]: Thank you.
+
+Anuoluwapo Balogun [58:06]: The client portal. Yes. so,
+
+Sixtus Agbo [58:09]: Yeah. Yeah.
+
+Anuoluwapo Balogun [58:10]: would feel. So, I would say that I have practically, let me call it. I have a flow in in my head, right? Which is
+
+Sixtus Agbo [59:04]: Okay.
+
+Anuoluwapo Balogun [59:05]: When a client's books, a call. We well, books the consultation more like so there's going to be a discovery call where I kind of like gets really understand. What's the client needs the clients environment, blah blah, and then after that, I would probably Create a proposal. So the client's portal comes right after the Clients, you know, science, we have a sign. We have a contract more like to get the work done. Now.
+
+Sixtus Agbo [59:43]: and then,
+
+Anuoluwapo Balogun [59:45]: what I have in mind is so the clients would, Sign up. For your client's photo. Right? So cancer, like a sign of link or something to the client. And then on that client portal, the client would be able to like, share. You know. um, secrets like API keys or things that I would need to like access their environment, whether it's on AWS or whatever, They'll be able to track the progress of work.
+
+Sixtus Agbo [01:00:16]: Okay.
+
+Anuoluwapo Balogun [01:00:20]: you know, like, Struck Alpha. I've gone. You know what I'm currently doing? And probably like a sort of estimated timeline on how long their work is going to take. Well, you know, based on, you know, the statement of work that previously presented and then
+
+Sixtus Agbo [01:00:36]: Yeah, there are ugly too.
+
+Anuoluwapo Balogun [01:00:38]: Uh, the clients can also, you know, add like maybe a co-worker and then assign them a role maybe read only access. Your team do you get it? Um no. The clients can also view the previously signed
+
+Sixtus Agbo [01:00:50]: Yeah.
+
+Anuoluwapo Balogun [01:00:56]: contracts and NDA so that you know, like there's no confusion You know, so you can't, you can view that documents to on that client portal. And then you can submit a ticket. So for those that have like Incidents, you know, the sort of like incident subscription with us, would, you know, be able to submit a ticket and then what and track the, the status of that ticket. So like it's Yeah. And and that means
+
+Sixtus Agbo [01:01:29]: Yeah, you can go on. I really had questions and they are similar to the things that you are seeing that is why I'm listening patiently. So I
+
+Anuoluwapo Balogun [01:01:40]: Okay. Okay, so so and
+
+Sixtus Agbo [01:01:42]: You can you can really go on.
+
+Anuoluwapo Balogun [01:01:45]: And, and I think the client portal has to Sort of match, the type of should I, I don't want to call you subscription but it's kind of like much the what's they get to see? In their clients, but I'll kind of like much you know, the service that we're about to provide to them. so, for example,
+
+Sixtus Agbo [01:02:05]: Be there.
+
+Anuoluwapo Balogun [01:02:07]: For. For those that do not have incidents response, the ticket. Maybe they can drop tickets but they can't really I haven't really don't fought deeply about it but I'm pretty sure they'll be like it's differences in what, you know, a client that has like, instance, responsion would have a different, you know, client portal from someone that just wants me to do a one time infrastructure review. Yeah. So I
+
+Sixtus Agbo [01:02:41]: And one time in fresh history.
+
+Anuoluwapo Balogun [01:02:44]: What?
+
+Sixtus Agbo [01:02:46]: Want them. If I should tell you, I'm going
+
+Anuoluwapo Balogun [01:02:49]: Yeah, so like, you know, some of this really depends on much more the details of Of the clients. So from the little experience that I have usually, You really depends. So there's something called Well, of course, I'm pretty sure. You do know that tenants. So for each tenants, there's going to be like a
+
+Sixtus Agbo [01:03:13]: Was against you pronounce system before or SAs build them, but need you. We soon
+
+Anuoluwapo Balogun [01:03:13]: sort of configurable settings. where we get to pick and choose what the client to get to see on their portal based on the Type of worker about to do for them. So that's what I have. Yeah.
+
+Sixtus Agbo [01:03:41]: as I wanted to ask, you really knocked out. Most of them. The first one was It was logging in your clients or boarding a man in the accounts you have seen handling requests or votes and roughly how many to start. So, I wanted to know like this scope of the clients were just told you that they're gonna depend on. So I understand that, you know, what you want me to? How is your question? No, IT clients or make sense and what happens on your side? You try status updates. Resolution is it helped as fast to get inside and you basa that already, he said it's gonna be ticketing style. Then the next question, I think we've covered this is on payments, you've already got your prison on the site, the incident response plans, the
+
+Anuoluwapo Balogun [01:04:31]: Mm-hmm.
+
+Sixtus Agbo [01:04:34]: coincidence and monthly. We cannot so important piece of toys, right? You retain us as a subscription and the things as one of them is adding money are thinking already types. You want to add
+
+Anuoluwapo Balogun [01:04:52]: So for the incidence response yet you know those ones are like the pricing are already set so yeah stripe would make sense. So for those that will be doing depending on if it standard or the other one, um, but for the others, it's going to
+
+Sixtus Agbo [01:05:08]: Okay.
+
+Anuoluwapo Balogun [01:05:12]: Be so the price is going to be like finally calculated after the discovery call, which would be contained in the proposal. So for the clients to accept that proposal and sign a contract, they are fine with the pricing. so, the pricing would Pop up in the client portal. So the payments would most likely go to the client portal Right. Because once they sign of sign up, and then let's say, You know, they they make the payments, Then, of course, you know, work has to get done. And then while you were talking, I also remember something that I forgot to mention, which is probably what I intend for MVP. Which is more like a demo. um, Probably demo tenant. So that when I'm having a discovery call,
+
+Sixtus Agbo [01:06:12]: Yeah. You can use the person to show them. It was
+
+Anuoluwapo Balogun [01:06:17]: The demo account, exactly.
+
+Sixtus Agbo [01:06:21]: Yeah, he was part of the patients. Do you expectations for the MVP?
+
+Anuoluwapo Balogun [01:06:22]: so, like that demo account can probably Yes, yes. So I want that demo tenants to be able to like to be easily configurable to fit into most of all the service situations that we have so that. Oh yeah, if you were, let's say, you know, I'm meeting someone that I need to show what it's going to be like You know, after the onboarding Into the client portal. Like, Oh yeah, this is what you're going to look like, but the person maybe I'm just doing, like, a cloud cost, optimated optimization for the person or the person can see. It's without seeing the other.
+
+Sixtus Agbo [01:07:02]: You can.
+
+Anuoluwapo Balogun [01:07:06]: The other functions or the other functionalities that that doesn't really relate to them. If you get what I'm saying, I think I probably needs like have a sort of PRD if
+
+Sixtus Agbo [01:07:17]: Document. Yeah that would help a lot impurity documents will help you know it
+
+Anuoluwapo Balogun [01:07:18]: maybe that would help you. Yeah.
+
+Sixtus Agbo [01:07:25]: but it's okay as you are
+
+Anuoluwapo Balogun [01:07:25]: Okay.
+
+Sixtus Agbo [01:07:28]: Talking about this course. American Indians. So I'll go to the notes properly or else if you have a parent
+
+Anuoluwapo Balogun [01:07:32]: Okay.
+
+Sixtus Agbo [01:07:37]: document that would be to if you like
+
+Anuoluwapo Balogun [01:07:38]: I don't, but I can quickly create something.
+
+Sixtus Agbo [01:07:43]: All right, I'm down for that. If we launch your face version and maybe essentials what has to be needs and work on it for later, things, you can put that in Charity document.
+
+Anuoluwapo Balogun [01:07:57]: Okay. Okay, that makes a lot of sense.
+
+Sixtus Agbo [01:08:00]: And what's your? your targets timeline when we do, once the first version to be like,
+
+Anuoluwapo Balogun [01:08:05]: so seriously I love to have a first version by like let's say July 30th but at the end of the day this is really dependent on Costs. Because I have multiple multiple things that I am doing, and I am.
+
+Sixtus Agbo [01:08:17]: Yes.
+
+Anuoluwapo Balogun [01:08:21]: Almost dried up at this point. So it depends on cost so that we add, You know,
+
+Sixtus Agbo [01:08:26]: Okay.
+
+Anuoluwapo Balogun [01:08:29]: have a rich, like kind of like approaches like. Yeah. Okay. So it's cost this amounts. That means that I can probably do this within a month or two months. So really, I want you, I am You know an engineer like you. So I'm not even going to try to like what's the word is it shorts hands or I don't even know how to do like like cost you less. So take your time maybe you know just think read and let me know how much it's
+
+Sixtus Agbo [01:08:58]: Yeah.
+
+Anuoluwapo Balogun [01:09:00]: going to cost you and then you can take it off from there.
+
+Sixtus Agbo [01:09:05]: Yeah, you can also let me know your you can let me know your budgets budgets. They are working with for it's easy. Said, you spent a lot and, right? I haven't idea instead of you to spend so much more like that's once when we put out just
+
+Anuoluwapo Balogun [01:09:19]: Am.
+
+Sixtus Agbo [01:09:23]: to say Yeah there's so many things right now. You can actually spend it out on a monthly dinner. So if you yeah that's that's one idea to that will help you with the cost.
+
+Anuoluwapo Balogun [01:09:41]: So the monthly rating retainer would be like I just want more information so I can understand like I want to be sure that I understand what you're seeing.
+
+Sixtus Agbo [01:09:51]: You can be said amounts each month or I've been ongoing work. Instead of one big
+
+Anuoluwapo Balogun [01:09:54]: I,
+
+Sixtus Agbo [01:09:57]: project, you understand? Or Yeah, like you could statue, this is on. We can start sweets. It could be it's six but that's the bigger one. That's nice. Like, Post you so much since you said, you didn't know things at moment. So I'm trying to consider you on Finances. So that's you won't be an inconvenience to, you know. if that would be the case, that's for a fixed price, then it's probably better for You need to be an employments and then the rest of the payments come from when I'm gone. Probably, it's everything. That's okay. I mean, we need to meet slam Dawn and then what you can Or we can have a monthly retainer. So that's you pay is set amount each month. or the ugly ongoing work, honestly the That's really what I'm thinking. So that's, it's an easier for you. This is a bigger project. This is a bigger build than the site in top application and I don't want to charge the number out in the sports, so, I want to. But what I really want to do the most important part is to get your school properly. I want to get everything you want and everything you need on it. You understand what I'm saying? So that's I'll be able to plan properly for building it. And then I'll do my research put together a clear scope and pricing and send it to you routing later on. But for tonight, why you are working on the epid documents that when you can send it nice person. It's more money. That's okay. But for tonight, I'm gonna focus on the application and your plus star. One question. To keep love City, dog deployments. And I'm glad that. Yeah, what's up. Already.
+
+Anuoluwapo Balogun [01:12:08]: Oh okay, where's my phone terminal? Okay. Okay. See
+
+Sixtus Agbo [01:12:12]: so, So yeah guys, I said for the
+
+Anuoluwapo Balogun [01:12:19]: Okay.
+
+Sixtus Agbo [01:12:21]: That one. Yeah, I was saying this. I'll send you the distance but you the budgets we are working out in yellow. Things are looking towards also, tell me this thing that you need, if you're nothing that you need on the scope, we carry the documents just as much as you can think of anything you can't think of
+
+Anuoluwapo Balogun [01:12:45]: Okay, that makes a lot of sense. He actually sounds like a good plan. I'll work on the PRD and then you'd let me know. Sincerely, I'm not even going to lay. I don't have a budget. I just want to Work with your friends and if it is something that oh I can't afford like you
+
+Sixtus Agbo [01:13:05]: 0.
+
+Anuoluwapo Balogun [01:13:06]: said, maybe we'll do like a monthly retainer and then spread it out. So I don't have a Um a set price in mind. I just want to work with you know. And if it is something I feel like Oh yeah I can't afford this, I'll let you know and then of course we'll talk, we'll talk through it.
+
+Sixtus Agbo [01:13:27]: All right, Mom.
+
+Anuoluwapo Balogun [01:13:28]: All right, thank you so much. I should really let you go.
+
+Sixtus Agbo [01:13:32]: And thank you.
+
+Anuoluwapo Balogun [01:13:36]: Have a great wonderful night. Thank you so much.
+
+Sixtus Agbo [01:13:40]: Okay, thank you so much.
+
+Anuoluwapo Balogun [01:13:42]: All right.
+
+Sixtus Agbo [01:13:45]: Actually, my
