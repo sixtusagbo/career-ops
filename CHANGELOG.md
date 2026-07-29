@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.24.0](https://github.com/santifer/career-ops/compare/career-ops-v1.23.0...career-ops-v1.24.0) (2026-07-29)
+
+
+### Features
+
+* **contacts:** company-history.mjs, employer silence and repost facts ([#1712](https://github.com/santifer/career-ops/issues/1712)) ([af21577](https://github.com/santifer/career-ops/commit/af2157747b730284e97c99936f2d15d3fa2977f9)), closes [#1711](https://github.com/santifer/career-ops/issues/1711)
+* **providers:** add iCIMS to the reverse-ATS full sweep ([#2141](https://github.com/santifer/career-ops/issues/2141)) ([b9cd65e](https://github.com/santifer/career-ops/commit/b9cd65e8ddba9448c9590c25f45288cf61c1c1c7)), closes [#2137](https://github.com/santifer/career-ops/issues/2137)
+* **scan-history:** additive normalized-company column for reliable repost keying ([#2243](https://github.com/santifer/career-ops/issues/2243)) ([a4575a6](https://github.com/santifer/career-ops/commit/a4575a64a550608ecca3386851f6ad76aa592205))
+
+
+### Bug Fixes
+
+* **analyze-patterns:** use symbol-safe lookarounds so C++, C# and .NET stop vanishing from tech gaps ([#2227](https://github.com/santifer/career-ops/issues/2227)) ([85cb018](https://github.com/santifer/career-ops/commit/85cb018a4c5ec06a806384e965b77e2374bace6b))
+* **dashboard:** stop reading funding and valuation figures as Pay ([#2139](https://github.com/santifer/career-ops/issues/2139)) ([581374f](https://github.com/santifer/career-ops/commit/581374f25ca971d7b8161ca94d34fc9de9236cd5))
+* **jd-skill-gap:** canonicalize CV and JD tokens through skill-extract ([#2226](https://github.com/santifer/career-ops/issues/2226)) ([dbaa761](https://github.com/santifer/career-ops/commit/dbaa761d10abaf34e52684e04fb996a0625e70fc))
+* **role-matcher:** fold accented Latin letters before tokenizing role titles ([#2209](https://github.com/santifer/career-ops/issues/2209)) ([830fe51](https://github.com/santifer/career-ops/commit/830fe511d04dce244b1ea20941a94b26a9d38d97)), closes [#2207](https://github.com/santifer/career-ops/issues/2207)
+* **scaffolder:** materialize the Kimi skill entrypoint on symlink-less filesystems ([#2259](https://github.com/santifer/career-ops/issues/2259)) ([06da05c](https://github.com/santifer/career-ops/commit/06da05c67283ce2c18c4c52e25ea7aee2d89d5ea))
+* **scan:** ignore StepStone's volatile rltr param when deduping posting URLs ([#1982](https://github.com/santifer/career-ops/issues/1982)) ([b1ae044](https://github.com/santifer/career-ops/commit/b1ae0443d8eec1a1468cc603dc36c3f7e1344fe4))
+* **scan:** record auth, server and unknown fetch errors in portal-health instead of reachable ([#2236](https://github.com/santifer/career-ops/issues/2236)) ([2328f46](https://github.com/santifer/career-ops/commit/2328f469ce6575d1582964f35e6265216e045ff6))
+
 ## [1.23.0](https://github.com/santifer/career-ops/compare/career-ops-v1.22.0...career-ops-v1.23.0) (2026-07-28)
 
 
